@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SheStay — Know it’s safe before you book</title>
+<meta name="description" content="Safety scores for hostels, PGs and rentals, built from verified women-only reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 120 100" width="34" height="28" fill="none" stroke="#F2B6C3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M60 48C46 20 18 6 9 20C1 34 28 52 60 50Z"/><path d="M60 48C74 20 102 6 111 20C119 34 92 52 60 50Z"/><path d="M60 53C42 58 20 70 27 85C34 97 54 80 60 56Z"/><path d="M60 53C78 58 100 70 93 85C86 97 66 80 60 56Z"/></svg>
+      SheStay
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="owner.html">For owners</a>
+      <a href="#" class="btn btn-ghost btn-small">Sign in</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="butterfly-wrap" aria-hidden="true">
+          <svg class="butterfly" viewBox="0 0 120 100" width="140" height="117" fill="none" stroke="#F2B6C3" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M60 48C46 20 18 6 9 20C1 34 28 52 60 50Z"/><path d="M60 48C74 20 102 6 111 20C119 34 92 52 60 50Z"/><path d="M60 53C42 58 20 70 27 85C34 97 54 80 60 56Z"/><path d="M60 53C78 58 100 70 93 85C86 97 66 80 60 56Z"/><path d="M60 49C44 38 28 26 15 21M60 49C76 38 92 26 105 21M60 55C48 64 38 74 31 84M60 55C72 64 82 74 89 84" opacity=".5"/><path d="M60 40V70"/><path d="M60 41C57 32 53 27 48 24M60 41C63 32 67 27 72 24"/></svg>
+        </div>
+        <p class="eyebrow">For women moving to a new city</p>
+        <h1 class="display">Know it’s safe <em>before</em> you book.</h1>
+        <p class="lead">SheStay checks any hostel, PG or rental for you — reviews from women who lived there, complaint records, the street at night and how the owner behaves — and gives you one honest score. Like asking an older sister who already lives in the city.</p>
+      </div>
+
+      <form id="search" class="card card-glass stack" action="results.html" method="get" novalidate aria-label="Search for a place to stay">
+        <p class="h2" style="font-size:26px">Where are you moving?</p>
+
+        <div>
+          <label class="label" for="city">City</label>
+          <div class="input-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#E8A8B8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <input class="input" id="city" name="city" type="text" value="New Delhi" autocomplete="address-level2" aria-describedby="city-error">
+          </div>
+          <p class="error-text" id="city-error" hidden>Enter the city you’re moving to</p>
+        </div>
+
+        <div>
+          <label class="label" for="college">College or workplace</label>
+          <div class="input-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#E8A8B8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5L2 9z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>
+            <input class="input" id="college" name="college" type="text" value="BVCOE, Paschim Vihar">
+          </div>
+        </div>
+
+        <div>
+          <label class="label" for="budget">Monthly budget</label>
+          <select class="select" id="budget" name="budget">
+            <option value="8000-12000">₹8,000 – ₹12,000</option>
+            <option value="0-8000">Under ₹8,000</option>
+            <option value="12000-18000">₹12,000 – ₹18,000</option>
+            <option value="18000-99999">Above ₹18,000</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend class="label">Type of place</legend>
+          <div class="row">
+            <button type="button" class="chip" data-toggle aria-pressed="true">Hostel</button>
+            <button type="button" class="chip" data-toggle aria-pressed="true">PG</button>
+            <button type="button" class="chip" data-toggle aria-pressed="false">Flat / room</button>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary btn-block" style="min-height:52px">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          Check safety
+        </button>
+        <p class="tiny muted center" style="margin:0">Free to search · no sign-in needed</p>
+      </form>
+    </section>
+
+    <section id="how" class="card" aria-labelledby="how-title">
+      <p id="how-title" class="eyebrow">How the score works</p>
+      <p style="margin:8px 0 0; font-size:18px">One score from 0 to 100, built from five things that matter to your safety — and every point links to the evidence behind it.</p>
+      <div class="weights">
+        <div><b>30%</b>Physical security</div>
+        <div><b>25%</b>Location safety</div>
+        <div><b>20%</b>Management behaviour</div>
+        <div><b>15%</b>Review trust</div>
+        <div><b>10%</b>Complaint history</div>
+      </div>
+      <div class="row">
+        <span class="badge badge-safe"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Safe · 75–100</span>
+        <span class="badge badge-warn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>Use caution · 50–74</span>
+        <span class="badge badge-risk"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/></svg>High risk · 0–49</span>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Why SheStay">
+      <div class="card card-glass">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#F2B6C3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h2>Only women who lived there</h2>
+        <p>Reviews count only after we check a rental agreement, college ID or booking proof.</p>
+      </div>
+      <div class="card card-glass">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#F2B6C3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>
+        <h2>Fake reviews filtered out</h2>
+        <p>AI flags paid or copy-pasted reviews. A person makes the final call.</p>
+      </div>
+      <div class="card card-glass">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#F2B6C3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+        <h2>Family sees what you see</h2>
+        <p>Send parents a read-only safety summary on WhatsApp in one tap.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p style="margin:0; flex:1 1 260px" class="small">Own a hostel or PG? Reply to reviews and see exactly what would raise your score.</p>
+    <a href="owner.html" class="btn btn-ghost">Owner dashboard →</a>
+  </footer>
+</div>
+
+<script src="js/app.js"></script>
+<script>
+  // City is required — show an inline error instead of searching
+  document.getElementById('search').addEventListener('submit', e => {
+    const city = document.getElementById('city');
+    const err = document.getElementById('city-error');
+    const empty = city.value.trim() === '';
+    city.setAttribute('aria-invalid', empty ? 'true' : 'false');
+    err.hidden = !empty;
+    if (empty) { e.preventDefault(); city.focus(); }
+  });
+</script>
+</body>
+</html>
