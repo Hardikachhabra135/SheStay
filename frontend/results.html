@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results — SheStay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+  <header class="site-header" style="flex-wrap:nowrap">
+    <a href="index.html" class="back" aria-label="Back to search">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <a href="index.html" class="search-pill">
+      <strong id="search-title" style="font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis">New Delhi · near BVCOE</strong>
+      <span class="tiny muted">₹8k–12k · Hostel, PG · Edit</span>
+    </a>
+  </header>
+
+  <main>
+    <h1 class="h1" id="results-title">Places near BVCOE</h1>
+    <p class="muted small" style="margin:0 0 16px">Ranked by safety score, safest first</p>
+
+    <div class="row" style="margin-bottom:10px" id="filters">
+      <button type="button" class="chip" data-toggle data-filter="near" aria-pressed="true">Within 3 km</button>
+      <button type="button" class="chip" data-toggle data-filter="safe" aria-pressed="false">Score 75+</button>
+      <button type="button" class="chip" data-toggle data-filter="meals" aria-pressed="false">Meals included</button>
+      <button type="button" class="chip" data-toggle data-filter="cheap" aria-pressed="false">Under ₹9,000</button>
+      <button type="button" class="chip" data-toggle data-filter="tiffin" aria-pressed="false">Tiffin nearby</button>
+    </div>
+    <div class="row between" style="margin-bottom:18px">
+      <label class="row small muted" for="sort">Sort
+        <select class="select" id="sort" style="width:auto; min-height:40px">
+          <option value="score">Safety score</option>
+          <option value="price">Price: low to high</option>
+          <option value="distance">Distance to college</option>
+          <option value="reviews">Most verified reviews</option>
+        </select>
+      </label>
+      <span class="tiny muted" id="count" aria-live="polite"></span>
+    </div>
+
+    <!-- JS fills one of these: loading skeleton, cards, empty state or error state -->
+    <div id="results" aria-live="polite"></div>
+
+    <p class="tiny muted center" style="margin-top:22px">Places with fewer than 5 reviews show “Not enough data” instead of a score.</p>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/data.js"></script>
+<script src="js/results.js"></script>
+</body>
+</html>
