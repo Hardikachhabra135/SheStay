@@ -16,20 +16,20 @@
   <header class="site-header">
     <a href="results.html" class="back">
       <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Results</a>
-    <span class="badge-demo">Demo data</span>
+    <span class="badge-demo" id="prop-header-badge">Demo data</span>
   </header>
 
   <!-- ===== Top: photos, name and the score card ===== -->
   <section class="split" style="align-items:stretch">
     <div class="main stack" style="gap:14px">
-      <div class="gallery">
-        <div class="big">Entrance &amp; gate (photo)</div>
+      <div class="gallery" id="prop-gallery">
+        <div class="big" id="gallery-main">Entrance &amp; gate (photo)</div>
         <div>Room</div><div>Corridor</div><div>+9 photos</div>
       </div>
       <div>
-        <h1 class="h1" style="font-size:42px; margin-top:4px">Sunrise Residency PG</h1>
-        <p class="muted" style="margin:0 0 10px">A-2 Block, Paschim Vihar, New Delhi</p>
-        <div class="row">
+        <h1 class="h1" id="prop-name" style="font-size:42px; margin-top:4px">Sunrise Residency PG</h1>
+        <p class="muted" id="prop-address" style="margin:0 0 10px">A-2 Block, Paschim Vihar, New Delhi</p>
+        <div class="row" id="prop-tags">
           <span class="tag">Women-only</span>
           <span class="tag">₹8,500/mo · meals incl.</span>
           <span class="tag">1.1 km to BVCOE</span>
@@ -41,27 +41,27 @@
     <aside class="side score-card stack" aria-label="Safety score">
       <div class="row" style="gap:18px; flex-wrap:nowrap">
         <div class="ring">
-          <svg viewBox="0 0 120 120" width="132" height="132" role="img" aria-label="Safety score 63 out of 100: use caution">
+          <svg id="score-svg" viewBox="0 0 120 120" width="132" height="132" role="img" aria-label="Safety score 63 out of 100: use caution">
             <circle cx="60" cy="60" r="52" stroke="rgba(242,182,195,.15)" stroke-width="8" fill="none"/>
             <!-- dasharray first number = score × 3.27 -->
-            <circle cx="60" cy="60" r="52" stroke="#F2C46D" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="206 327" transform="rotate(-90 60 60)"/>
+            <circle id="score-circle" cx="60" cy="60" r="52" stroke="#F2C46D" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="206 327" transform="rotate(-90 60 60)"/>
           </svg>
-          <div class="ring-num" aria-hidden="true"><b>63</b><span class="tiny muted">out of 100</span></div>
+          <div class="ring-num" aria-hidden="true"><b id="score-num">63</b><span class="tiny muted">out of 100</span></div>
         </div>
-        <div class="stack" style="gap:8px; align-items:flex-start">
+        <div class="stack" style="gap:8px; align-items:flex-start" id="score-badge-wrap">
           <span class="eyebrow">SheStay score</span>
-          <span class="badge badge-warn"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>Use caution</span>
-          <span class="tiny muted">Confidence: good · 29 verified reviews</span>
+          <span class="badge badge-warn" id="score-badge"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>Use caution</span>
+          <span class="tiny muted" id="score-confidence">Confidence: good · 29 verified reviews</span>
         </div>
       </div>
       <div>
         <h2 class="h2" style="font-size:24px; margin-bottom:6px">Why this score</h2>
-        <p style="margin:0; color:#F2E0E5">Inside, Sunrise is well run: CCTV works, the gate closes at 10 pm and the owner usually replies to complaints within a day. It loses points outside — the lane from the metro is poorly lit after 8 pm — and two residents waited months for deposit refunds this year. A reasonable pick if you’ll be home before dark; ask about pickup or a lit route if you won’t.</p>
+        <p id="score-why" style="margin:0; color:#F2E0E5">Inside, Sunrise is well run: CCTV works, the gate closes at 10 pm and the owner usually replies to complaints within a day. It loses points outside — the lane from the metro is poorly lit after 8 pm — and two residents waited months for deposit refunds this year.</p>
       </div>
-      <p class="tiny muted" style="margin:0">38 reviews (29 verified) · 4 complaint records · location data · updated 3 days ago</p>
+      <p class="tiny muted" id="score-meta" style="margin:0">38 reviews (29 verified) · 4 complaint records · location data · updated recently</p>
       <div class="row">
         <a href="#share" class="btn btn-primary" style="flex:1 1 180px">Share with family</a>
-        <a href="review.html" class="btn btn-ghost" style="flex:1 1 140px">Write a review</a>
+        <a href="review.html" id="btn-write-review" class="btn btn-ghost" style="flex:1 1 140px">Write a review</a>
       </div>
     </aside>
   </section>
@@ -70,76 +70,57 @@
     <!-- ===== Left column ===== -->
     <main class="main stack" style="gap:20px">
 
+      <!-- ===== AI Safety Intelligence Card ===== -->
+      <section class="card card-glass" id="ai-assessment-card" aria-labelledby="ai-title">
+        <div class="row between">
+          <div class="row" style="gap:8px">
+            <span class="badge badge-pink badge-sm">✦ Gemini AI Verified Assessment</span>
+            <span class="badge badge-safe badge-sm" id="ai-verdict-badge">Safe</span>
+          </div>
+          <span class="tiny muted" id="ai-timestamp">Assessed today</span>
+        </div>
+        <h2 id="ai-title" class="h2" style="font-size:26px; margin-top:8px">AI Safety Analysis &amp; Recommendations</h2>
+        <p class="small" id="ai-explanation" style="color:var(--text-2); margin:0 0 12px">Analyzing property safety data...</p>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-bottom:14px">
+          <div class="inner" style="background:#1B251F; border:1px solid rgba(127,214,164,.25)">
+            <strong style="color:var(--safe-text); font-size:13px; display:block; margin-bottom:6px">Positive Safety Indicators</strong>
+            <ul id="ai-positives" class="evidence" style="font-size:13px; gap:4px">
+              <li><span>Loading indicators...</span></li>
+            </ul>
+          </div>
+          <div class="inner" style="background:#28181A; border:1px solid rgba(255,138,128,.25)">
+            <strong style="color:var(--risk-text); font-size:13px; display:block; margin-bottom:6px">Risk Indicators &amp; Missing Info</strong>
+            <ul id="ai-risks" class="evidence" style="font-size:13px; gap:4px">
+              <li><span>Loading risk factors...</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="inner" style="background:var(--chip)">
+          <strong style="font-size:13px; color:var(--pink); display:block; margin-bottom:6px">Recommendations for Women Staying Here</strong>
+          <ul id="ai-recs" class="evidence" style="font-size:13px; gap:6px"></ul>
+        </div>
+        
+        <div class="row between" style="margin-top:12px">
+          <span class="tiny muted" id="ai-caveat" style="font-style:italic">Sample demonstration analysis. Not physically audited.</span>
+          <button type="button" class="btn btn-ghost btn-small" id="btn-reassess-ai">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+            Re-analyze with Gemini
+          </button>
+        </div>
+      </section>
+
       <section class="card" aria-labelledby="bd">
         <h2 id="bd" class="h2" style="font-size:30px">Score breakdown</h2>
         <p class="small muted" style="margin:2px 0 6px">Five categories, weighted by how much they affect your safety.</p>
 
-        <article class="category">
-          <div class="row between"><h3 class="h3">Physical security <span class="weight">· 30%</span></h3><span class="badge badge-safe badge-sm">✓ 78 · Safe</span></div>
-          <div class="bar"><div class="safe" style="width:78%"></div></div>
-          <ul class="evidence">
-            <li><span style="color:var(--safe-text)">✓</span><span>CCTV at the gate and every corridor <span class="src">Photo-verified · Oct 2026</span></span></li>
-            <li><span style="color:var(--safe-text)">✓</span><span>Biometric entry and a night guard <span class="src">21 reviews</span></span></li>
-            <li><span style="color:var(--warn-text)">!</span><span>No fire extinguisher seen on the 2nd floor <span class="src">1 review</span></span></li>
-          </ul>
-        </article>
-
-        <article class="category">
-          <div class="row between"><h3 class="h3">Location safety <span class="weight">· 25%</span></h3><span class="badge badge-risk badge-sm">✕ 48 · High risk</span></div>
-          <div class="bar"><div class="risk" style="width:48%"></div></div>
-          <ul class="evidence">
-            <li><span style="color:var(--risk-text)">✕</span><span>Lane from the metro is unlit after 8 pm <span class="src">4 reviews · 1 photo</span></span></li>
-            <li><span style="color:var(--safe-text)">✓</span><span>Police and hospital nearby <span class="src">OpenStreetMap</span></span></li>
-          </ul>
-        </article>
-
-        <article class="category">
-          <div class="row between"><h3 class="h3">Management behaviour <span class="weight">· 20%</span></h3><span class="badge badge-warn badge-sm">! 72 · Use caution</span></div>
-          <div class="bar"><div class="warn" style="width:72%"></div></div>
-          <ul class="evidence">
-            <li><span style="color:var(--safe-text)">✓</span><span>Owner replies to complaints within about a day <span class="src">17 reviews</span></span></li>
-            <li><span style="color:var(--warn-text)">!</span><span>Rooms entered for “inspection” with under an hour’s notice <span class="src">2 reviews</span></span></li>
-          </ul>
-        </article>
-
-        <article class="category">
-          <div class="row between"><h3 class="h3">Review trust <span class="weight">· 15%</span></h3><span class="badge badge-warn badge-sm">! 70 · Use caution</span></div>
-          <div class="bar"><div class="warn" style="width:70%"></div></div>
-          <ul class="evidence">
-            <li><span style="color:var(--safe-text)">✓</span><span>29 of 38 reviews are from verified residents</span></li>
-            <li><span style="color:var(--warn-text)">!</span><span>5 reviews flagged as likely promotional — left out of the score <span class="src">AI check + moderator</span></span></li>
-          </ul>
-        </article>
-
-        <article class="category" style="padding-bottom:0">
-          <div class="row between"><h3 class="h3">Complaint history <span class="weight">· 10%</span></h3><span class="badge badge-risk badge-sm">✕ 30 · High risk</span></div>
-          <div class="bar"><div class="risk" style="width:30%"></div></div>
-          <ul class="evidence">
-            <li><span style="color:var(--risk-text)">✕</span><span>2 deposit-refund complaints in 2026 — 1 still open <span class="src">SheStay reports</span></span></li>
-            <li><span style="color:var(--warn-text)">!</span><span>1 food-hygiene complaint, resolved <span class="src">Public grievance portal · 2025</span></span></li>
-          </ul>
-        </article>
+        <div id="breakdown-list"></div>
       </section>
 
       <section class="card card-alert" aria-labelledby="rf">
         <h2 id="rf" class="h2" style="font-size:30px; margin-bottom:12px">Red flags · 3</h2>
-        <div class="stack" style="gap:10px">
-          <div class="inner" style="background:#241619">
-            <div class="row between"><strong>Unlit lane after 8 pm</strong><span class="badge badge-risk badge-sm">High · affects score</span></div>
-            <p class="small" style="margin:6px 0 0; color:var(--text-2)">The walk from Paschim Vihar East metro has no working streetlights. Reported by 4 verified residents, most recently 3 weeks ago.</p>
-            <p class="reply">Owner replied: “Two lights added at our gate and a streetlight request filed. Our guard meets residents at the metro after 8 pm — just call.”</p>
-          </div>
-          <div class="inner" style="background:#241619">
-            <div class="row between"><strong>Slow deposit refunds</strong><span class="badge badge-warn badge-sm">Medium</span></div>
-            <p class="small" style="margin:6px 0 0; color:var(--text-2)">Two residents waited 3+ months for ₹15,000 deposits. One refunded after a complaint; one still open.</p>
-            <p class="reply">Owner replied: “Refund policy is now 30 days, in writing.”</p>
-          </div>
-          <div class="inner" style="background:#241619">
-            <div class="row between"><strong>Room entry with short notice</strong><span class="badge badge-warn badge-sm">Medium</span></div>
-            <p class="small" style="margin:6px 0 0; color:var(--text-2)">Staff entered rooms for inspection with under an hour’s notice. 2 reports.</p>
-            <p class="tiny muted" style="margin:8px 0 0; font-style:italic">Owner hasn’t responded yet.</p>
-          </div>
-        </div>
+        <div class="stack" style="gap:10px" id="red-flags-list"></div>
       </section>
 
       <section class="stack" style="gap:12px" aria-labelledby="rv">
@@ -148,34 +129,10 @@
             <h2 id="rv" class="h2" style="font-size:30px">From women who lived here</h2>
             <p class="small muted" style="margin:2px 0 0">Only women can post. Only verified residents count toward the score.</p>
           </div>
-          <label class="check small" style="font-weight:600"><input type="checkbox" checked>Verified only</label>
+          <label class="check small" style="font-weight:600"><input type="checkbox" id="filter-verified" checked>Verified only</label>
         </div>
 
-        <article class="review">
-          <div class="row" style="gap:12px; flex-wrap:nowrap"><span class="avatar" aria-hidden="true">R</span><div><strong>Riya · B.Tech student</strong><br><span class="tiny muted">Lived here Jan–Oct 2026 · 3 weeks ago</span></div></div>
-          <div class="row" style="margin:12px 0 10px"><span class="badge badge-pink badge-sm">Verified resident</span><span class="badge badge-safe badge-sm">✦ AI check: likely genuine · 94</span></div>
-          <p class="tiny muted" style="margin:0 0 8px">Security 4/5 · Location at night 2/5 · Management 4/5</p>
-          <p class="text">Inside I always felt safe — the guard knows every girl by name and the CCTV actually works. The problem is the walk from the metro. After 8 it’s pitch dark and a few men hang around the tea stall. I started taking an e-rickshaw for ₹20 to the gate.</p>
-          <div class="row" style="margin-top:12px"><button type="button" class="chip" data-toggle aria-pressed="false">Helpful · 24</button><button type="button" class="btn-link">Report</button></div>
-        </article>
-
-        <article class="review">
-          <div class="row" style="gap:12px; flex-wrap:nowrap"><span class="avatar" aria-hidden="true">A</span><div><strong>Anonymous</strong><br><span class="tiny muted">Lived here 2025–2026 · 2 months ago</span></div></div>
-          <div class="row" style="margin:12px 0 10px"><span class="badge badge-pink badge-sm">Verified resident</span><span class="badge badge-safe badge-sm">✦ AI check: likely genuine · 88</span></div>
-          <p class="text">Food and cleaning are fine. But I had to follow up for almost four months to get my deposit back, and only got it after I filed a complaint. Get the refund terms in writing before you pay.</p>
-          <div class="inner" style="margin-top:12px">
-            <p class="tiny" style="margin:0 0 4px; font-weight:700; color:var(--pink)">Owner’s reply · verified owner</p>
-            <p class="small" style="margin:0; color:var(--text-2)">We’re sorry about the delay. Since September, refunds are made within 30 days and the terms are in every agreement.</p>
-          </div>
-        </article>
-
-        <article class="review flagged">
-          <div class="row" style="gap:12px; flex-wrap:nowrap"><span class="avatar" aria-hidden="true" style="color:#D9BFC6">P</span><div><strong>Priya S.</strong><br><span class="tiny muted">Not verified · 5 days ago</span></div></div>
-          <div class="row" style="margin:12px 0 10px"><span class="badge badge-warn badge-sm">✦ AI check: possibly promotional · 31</span></div>
-          <p class="text" style="color:var(--text-2)">Best PG in Delhi!!! Very safe, very clean, owner is like family. 5 stars, must book now.</p>
-          <p class="tiny muted" style="margin:10px 0 0">Not counted in the score: no proof of stay, and wording matches 4 other reviews.</p>
-        </article>
-        <a href="#" class="btn btn-ghost" style="align-self:center">All 38 reviews</a>
+        <div id="reviews-list" class="stack" style="gap:12px"></div>
       </section>
     </main>
 
@@ -246,7 +203,7 @@
 
       <div class="card" style="border-style:dashed">
         <p class="small" style="margin:0 0 10px"><strong>Own or manage this place?</strong> Reply to reviews, correct outdated details and see what would raise your score.</p>
-        <a href="owner.html" class="btn btn-ghost btn-small">Owner dashboard →</a>
+        <a href="owner.html" id="link-owner-dash" class="btn btn-ghost btn-small">Owner dashboard →</a>
       </div>
     </div>
   </div>

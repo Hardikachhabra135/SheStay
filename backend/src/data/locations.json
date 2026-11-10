@@ -1,0 +1,492 @@
+{
+  "states": [
+    {
+      "name": "Delhi NCR",
+      "code": "DL",
+      "cities": [
+        {
+          "name": "New Delhi",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 28.6139, "lng": 77.2090 },
+          "popularLocalities": ["Paschim Vihar", "Rohini", "Dwarka", "South Extension", "North Campus", "Hauz Khas", "Laxmi Nagar", "Karol Bagh", "Janakpuri", "Saket"]
+        },
+        {
+          "name": "Greater Noida",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 28.4744, "lng": 77.5040 },
+          "popularLocalities": ["Knowledge Park I", "Knowledge Park II", "Knowledge Park III", "Pari Chowk", "Alpha 1", "Beta 1", "Gamma 1", "Omega 1"]
+        },
+        {
+          "name": "Noida",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 28.5355, "lng": 77.3910 },
+          "popularLocalities": ["Sector 62", "Sector 15", "Sector 18", "Sector 125", "Sector 126", "Sector 137", "Sector 76", "Sector 128"]
+        },
+        {
+          "name": "Gurugram",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 28.4595, "lng": 77.0266 },
+          "popularLocalities": ["Cyber City", "Sector 14", "Sector 29", "DLF Phase 3", "Sohna Road", "Golf Course Road", "Sector 56", "Udyog Vihar"]
+        },
+        {
+          "name": "Ghaziabad",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 28.6692, "lng": 77.4538 },
+          "popularLocalities": ["Indirapuram", "Vaishali", "Vasundhara", "Raj Nagar Extension", "Crossings Republik"]
+        },
+        {
+          "name": "Faridabad",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 28.4089, "lng": 77.3178 },
+          "popularLocalities": ["Sector 15", "Sector 16", "Greenfield Colony", "NIT Faridabad", "Surajkund"]
+        }
+      ]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "code": "UP",
+      "cities": [
+        {
+          "name": "Lucknow",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 26.8467, "lng": 80.9462 },
+          "popularLocalities": ["Gomti Nagar", "Hazratganj", "Aliganj", "Indira Nagar", "Mahanagar", "Jankipuram"]
+        },
+        {
+          "name": "Kanpur",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 26.4499, "lng": 80.3319 },
+          "popularLocalities": ["Kalyanpur", "Swaroop Nagar", "Kakadeo", "Civil Lines", "Govind Nagar"]
+        },
+        {
+          "name": "Varanasi",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 25.3176, "lng": 82.9739 },
+          "popularLocalities": ["Lanka (BHU Area)", "Sigra", "Assi", "Orderly Bazar", "Bhelupur"]
+        },
+        {
+          "name": "Prayagraj",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 25.4358, "lng": 81.8463 },
+          "popularLocalities": ["Civil Lines", "Katra", "George Town", "Allahpur", "Teliyarganj"]
+        },
+        {
+          "name": "Agra",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 27.1767, "lng": 78.0081 },
+          "popularLocalities": ["Khandari", "Sanjay Place", "Kamla Nagar", "Dayal Bagh", "Tajganj"]
+        },
+        {
+          "name": "Meerut",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 28.9845, "lng": 77.7064 },
+          "popularLocalities": ["Shastri Nagar", "Saket", "Modipuram", "Civil Lines", "Ganga Nagar"]
+        },
+        {
+          "name": "Gorakhpur",
+          "tier": "Tier 3",
+          "isHub": false,
+          "coordinates": { "lat": 26.7606, "lng": 83.3732 },
+          "popularLocalities": ["Civil Lines", "Golghar", "Mohaddipur", "Betiahata", "Kusumhi"]
+        }
+      ]
+    },
+    {
+      "name": "Haryana",
+      "code": "HR",
+      "cities": [
+        {
+          "name": "Sonipat",
+          "tier": "Tier 3",
+          "isHub": true,
+          "coordinates": { "lat": 28.9931, "lng": 77.0151 },
+          "popularLocalities": ["Rajiv Gandhi Education City", "Sector 14", "Model Town", "Murthal Road"]
+        },
+        {
+          "name": "Rohtak",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 28.8955, "lng": 76.6066 },
+          "popularLocalities": ["Model Town", "Sector 1", "Civil Lines", "Subhash Nagar", "Medical Mor"]
+        },
+        {
+          "name": "Karnal",
+          "tier": "Tier 3",
+          "isHub": false,
+          "coordinates": { "lat": 29.6857, "lng": 76.9905 },
+          "popularLocalities": ["Model Town", "Sector 13", "Sector 14", "Kunjpura Road"]
+        }
+      ]
+    },
+    {
+      "name": "Rajasthan",
+      "code": "RJ",
+      "cities": [
+        {
+          "name": "Jaipur",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 26.9124, "lng": 75.7873 },
+          "popularLocalities": ["Malviya Nagar", "Vaishali Nagar", "Mansarovar", "Jagatpura", "C-Scheme", "Raja Park", "Tonk Road"]
+        },
+        {
+          "name": "Kota",
+          "tier": "Tier 3",
+          "isHub": true,
+          "coordinates": { "lat": 25.2138, "lng": 75.8648 },
+          "popularLocalities": ["Landmark City", "Indra Vihar", "Rajeev Gandhi Nagar", "Talwandi", "Vigyan Nagar", "Mahaveer Nagar"]
+        },
+        {
+          "name": "Udaipur",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 24.5854, "lng": 73.7125 },
+          "popularLocalities": ["Hiran Magri", "Fatehpura", "Sukhadia Circle", "Bhuwana", "Panchwati"]
+        },
+        {
+          "name": "Jodhpur",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 26.2389, "lng": 73.0243 },
+          "popularLocalities": ["Shastri Nagar", "Ratanada", "Sardarpura", "Pal Road", "Basni"]
+        },
+        {
+          "name": "Ajmer",
+          "tier": "Tier 3",
+          "isHub": false,
+          "coordinates": { "lat": 26.4499, "lng": 74.6399 },
+          "popularLocalities": ["Civil Lines", "Vaishali Nagar", "Panchsheel Nagar", "Adarsh Nagar"]
+        }
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "code": "MH",
+      "cities": [
+        {
+          "name": "Mumbai",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 19.0760, "lng": 72.8777 },
+          "popularLocalities": ["Powai", "Andheri East", "Andheri West", "Bandra West", "Juhu", "Goregaon East", "Vile Parle", "Chembur", "Dadar"]
+        },
+        {
+          "name": "Pune",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 18.5204, "lng": 73.8567 },
+          "popularLocalities": ["Viman Nagar", "Kothrud", "Hinjewadi", "Kalyani Nagar", "Baner", "Aundh", "Wakad", "Shivaji Nagar", "Senapati Bapat Road"]
+        },
+        {
+          "name": "Nagpur",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 21.1458, "lng": 79.0882 },
+          "popularLocalities": ["Dharampeth", "Ramdaspeth", "Civil Lines", "Pratap Nagar", "Manish Nagar"]
+        },
+        {
+          "name": "Nashik",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 19.9975, "lng": 73.7898 },
+          "popularLocalities": ["College Road", "Gangapur Road", "Indira Nagar", "Panchavati", "Govind Nagar"]
+        },
+        {
+          "name": "Thane",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 19.2183, "lng": 72.9781 },
+          "popularLocalities": ["Ghodbunder Road", "Panch Pakhadi", "Majiwada", "Vartak Nagar", "Naupada"]
+        }
+      ]
+    },
+    {
+      "name": "Karnataka",
+      "code": "KA",
+      "cities": [
+        {
+          "name": "Bengaluru",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 12.9716, "lng": 77.5946 },
+          "popularLocalities": ["Koramangala", "Indiranagar", "HSR Layout", "Electronic City", "Whitefield", "BTM Layout", "Jayanagar", "Marathahalli", "Bannerghatta Road", "Hebbal"]
+        },
+        {
+          "name": "Mysuru",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 12.2958, "lng": 76.6394 },
+          "popularLocalities": ["Gokulam", "Jayalakshmipuram", "Kuvempunagar", "Saraswathipuram", "Hebbal Industrial Area"]
+        },
+        {
+          "name": "Mangaluru",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 12.9141, "lng": 74.8560 },
+          "popularLocalities": ["Bejai", "Kadri", "Kodialbail", "Lalbagh", "Surathkal"]
+        },
+        {
+          "name": "Hubballi",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 15.3647, "lng": 75.1240 },
+          "popularLocalities": ["Vidyanagar", "Keshwapur", "Shirur Park", "Gokul Road"]
+        }
+      ]
+    },
+    {
+      "name": "Telangana",
+      "code": "TG",
+      "cities": [
+        {
+          "name": "Hyderabad",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 17.3850, "lng": 78.4867 },
+          "popularLocalities": ["Gachibowli", "Hitec City", "Madhapur", "Kondapur", "Kukatpally", "Jubilee Hills", "Banjara Hills", "Ameerpet", "Begumpet"]
+        },
+        {
+          "name": "Warangal",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 17.9689, "lng": 79.5941 },
+          "popularLocalities": ["Kazipet (NIT Area)", "Hanamkonda", "Subedari", "Nakkalagutta"]
+        },
+        {
+          "name": "Karimnagar",
+          "tier": "Tier 3",
+          "isHub": false,
+          "coordinates": { "lat": 18.4386, "lng": 79.1288 },
+          "popularLocalities": ["Collectorate Road", "Mukarampura", "Vavilalapally", "Kothirampur"]
+        }
+      ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "code": "TN",
+      "cities": [
+        {
+          "name": "Chennai",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 13.0827, "lng": 80.2707 },
+          "popularLocalities": ["Adyar", "Velachery", "OMR (Old Mahabalipuram Rd)", "Thiruvanmiyur", "T. Nagar", "Guindy", "Anna Nagar", "Nungambakkam"]
+        },
+        {
+          "name": "Vellore",
+          "tier": "Tier 3",
+          "isHub": true,
+          "coordinates": { "lat": 12.9165, "lng": 79.1325 },
+          "popularLocalities": ["Katpadi (VIT Area)", "Gandhi Nagar", "Sathuvachari", "Bagayam (CMC Area)", "Thotta Palayam"]
+        },
+        {
+          "name": "Coimbatore",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 11.0168, "lng": 76.9558 },
+          "popularLocalities": ["RS Puram", "Gandhipuram", "Peelamedu", "Saibaba Colony", "Saravanampatti (IT Hub)"]
+        },
+        {
+          "name": "Madurai",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 9.9252, "lng": 78.1198 },
+          "popularLocalities": ["KK Nagar", "Anna Nagar", "Tallakulam", "SS Colony", "TVS Nagar"]
+        }
+      ]
+    },
+    {
+      "name": "West Bengal",
+      "code": "WB",
+      "cities": [
+        {
+          "name": "Kolkata",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 22.5726, "lng": 88.3639 },
+          "popularLocalities": ["Salt Lake (Sector V)", "New Town", "Ballygunge", "Park Street", "Jadavpur", "Gariahat", "Behala"]
+        },
+        {
+          "name": "Durgapur",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 23.5204, "lng": 87.3119 },
+          "popularLocalities": ["City Centre", "Bidhannagar", "Benachity", "Muchipara (NIT Area)"]
+        },
+        {
+          "name": "Siliguri",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 26.7271, "lng": 88.3953 },
+          "popularLocalities": ["Sevoke Road", "Pradhan Nagar", "Hakim Para", "Matigara"]
+        }
+      ]
+    },
+    {
+      "name": "Punjab & Chandigarh",
+      "code": "PB",
+      "cities": [
+        {
+          "name": "Chandigarh",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 30.7333, "lng": 76.7794 },
+          "popularLocalities": ["Sector 15 (near PU)", "Sector 22", "Sector 35", "Sector 43", "Sector 8", "Sector 37"]
+        },
+        {
+          "name": "Mohali",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 30.7046, "lng": 76.7179 },
+          "popularLocalities": ["Kharar (near CU)", "Phase 7", "Phase 3B2", "Phase 11", "Aerocity", "Sector 70"]
+        }
+      ]
+    },
+    {
+      "name": "Uttarakhand",
+      "code": "UK",
+      "cities": [
+        {
+          "name": "Dehradun",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 30.3165, "lng": 78.0322 },
+          "popularLocalities": ["Rajpur Road", "Prem Nagar", "Karanpur", "Chakrata Road", "Dharampur", "Ballupur"]
+        }
+      ]
+    },
+    {
+      "name": "Himachal Pradesh",
+      "code": "HP",
+      "cities": [
+        {
+          "name": "Shimla",
+          "tier": "Tier 2",
+          "isHub": false,
+          "coordinates": { "lat": 31.1048, "lng": 77.1734 },
+          "popularLocalities": ["Summer Hill (HPU Area)", "Sanjauli", "Chotta Shimla", "Mall Road", "Kasumpti"]
+        }
+      ]
+    },
+    {
+      "name": "Madhya Pradesh",
+      "code": "MP",
+      "cities": [
+        {
+          "name": "Bhopal",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 23.2599, "lng": 77.4126 },
+          "popularLocalities": ["MP Nagar", "Arera Colony", "Shahpura", "Kolar Road", "Hoshangabad Road"]
+        },
+        {
+          "name": "Indore",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 22.7196, "lng": 75.8577 },
+          "popularLocalities": ["Vijay Nagar", "Palasia", "Bhawarkua (Coaching/College Hub)", "Geeta Bhawan", "AB Road", "Rau (IIM/Silicon Valley)"]
+        }
+      ]
+    },
+    {
+      "name": "Gujarat",
+      "code": "GJ",
+      "cities": [
+        {
+          "name": "Ahmedabad",
+          "tier": "Tier 1",
+          "isHub": true,
+          "coordinates": { "lat": 23.0225, "lng": 72.5714 },
+          "popularLocalities": ["Navrangpura", "Vastrapur", "Bodakdev", "Satellite", "SG Highway", "Prahlad Nagar", "Maninagar"]
+        },
+        {
+          "name": "Surat",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 21.1702, "lng": 72.8311 },
+          "popularLocalities": ["Adajan", "Vesu", "Piplod", "Ghod Dod Road", "Athwa"]
+        },
+        {
+          "name": "Vadodara",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 22.3072, "lng": 73.1812 },
+          "popularLocalities": ["Fatehgunj (MSU Area)", "Alkapuri", "Sayajigunj", "Gotri", "Vasna Road"]
+        }
+      ]
+    },
+    {
+      "name": "Bihar & Jharkhand",
+      "code": "BR-JH",
+      "cities": [
+        {
+          "name": "Patna",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 25.5941, "lng": 85.1376 },
+          "popularLocalities": ["Boring Road", "Kankarbagh", "Rajendra Nagar", "Bailey Road", "Patliputra Colony"]
+        },
+        {
+          "name": "Ranchi",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 23.3441, "lng": 85.3096 },
+          "popularLocalities": ["Lalpur", "Bariatu", "Harmu", "Doranda", "Kanke Road"]
+        }
+      ]
+    },
+    {
+      "name": "Odisha & Assam",
+      "code": "OD-AS",
+      "cities": [
+        {
+          "name": "Bhubaneswar",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 20.2961, "lng": 85.8245 },
+          "popularLocalities": ["Patia (KIIT Area)", "Jayadev Vihar", "Saheed Nagar", "Khandagiri", "Chandrasekharpur"]
+        },
+        {
+          "name": "Guwahati",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 26.1445, "lng": 91.7362 },
+          "popularLocalities": ["Jalukbari (Guwahati Univ / IIT)", "Paltan Bazaar", "Ulubari", "Ganeshguri", "Six Mile"]
+        }
+      ]
+    },
+    {
+      "name": "Kerala",
+      "code": "KL",
+      "cities": [
+        {
+          "name": "Kochi",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 9.9312, "lng": 76.2673 },
+          "popularLocalities": ["Kakkanad (Infopark)", "Edappally", "Kaloor", "Panampilly Nagar", "Palarivattom"]
+        },
+        {
+          "name": "Thiruvananthapuram",
+          "tier": "Tier 2",
+          "isHub": true,
+          "coordinates": { "lat": 8.5241, "lng": 76.9366 },
+          "popularLocalities": ["Kazhakoottam (Technopark)", "Pattom", "Vellayambalam", "Kowdiar", "Sreekaryam"]
+        }
+      ]
+    }
+  ]
+}
+

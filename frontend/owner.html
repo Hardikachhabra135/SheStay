@@ -13,30 +13,41 @@
 
   <header class="site-header">
     <a href="index.html" class="logo">SheStay <small>for owners</small></a>
-    <span class="badge badge-pink badge-sm">Verified owner</span>
+    <span class="badge badge-pink badge-sm">Verified owner portal</span>
   </header>
 
-  <label class="label" for="prop">Property</label>
-  <select class="select" id="prop" style="max-width:420px; font-weight:600"><option>Sunrise Residency PG · Paschim Vihar</option></select>
+  <div class="row between" style="margin-top:14px; margin-bottom:14px">
+    <div>
+      <label class="label" for="prop">Select property</label>
+      <select class="select" id="prop" style="min-width:320px; max-width:440px; font-weight:600">
+        <option value="sunrise">Sunrise Residency PG · Paschim Vihar</option>
+      </select>
+    </div>
+    <div class="row" data-single role="group" id="owner-tabs" style="align-self:flex-end">
+      <button type="button" class="chip" data-toggle data-tab="dash" aria-pressed="true">Dashboard &amp; Reviews</button>
+      <button type="button" class="chip" data-toggle data-tab="form" aria-pressed="false">+ Submit / Edit Property</button>
+    </div>
+  </div>
 
-  <div class="split" style="margin-top:18px">
+  <!-- TAB 1: DASHBOARD & REVIEWS -->
+  <div id="tab-dash" class="split" style="margin-top:10px">
     <div class="side stack" style="gap:18px; flex:1 1 320px">
       <section class="score-card" aria-label="Your score">
         <p class="eyebrow">Your safety score</p>
         <div class="row" style="gap:14px; margin-top:6px">
-          <span style="font-family:var(--serif); font-size:64px; font-weight:600; line-height:1">63</span>
+          <span id="owner-score-num" style="font-family:var(--serif); font-size:64px; font-weight:600; line-height:1">63</span>
           <div class="stack" style="gap:6px; align-items:flex-start">
-            <span class="badge badge-warn">! Use caution</span>
-            <span class="small" style="color:var(--safe-text)">▲ 4 points since August</span>
+            <span class="badge badge-warn" id="owner-score-badge">! Use caution</span>
+            <span class="small" id="owner-score-delta" style="color:var(--safe-text)">▲ 4 points since August</span>
           </div>
         </div>
-        <p class="small muted" style="margin:10px 0 0">Seen by 312 students this month · 41 shared it with family</p>
+        <p class="small muted" id="owner-score-views" style="margin:10px 0 0">Seen by 312 students this month · 41 shared it with family</p>
       </section>
 
       <section class="card" aria-labelledby="imp">
         <h2 id="imp" class="h2">What to improve</h2>
         <p class="small muted" style="margin:2px 0 12px">Ranked by impact. Your score updates once residents confirm the change.</p>
-        <ol class="stack" style="gap:10px; margin:0; padding:0; list-style:none">
+        <ol class="stack" id="owner-improvements" style="gap:10px; margin:0; padding:0; list-style:none">
           <li class="inner"><div class="row between" style="flex-wrap:nowrap"><strong>Light the lane from the metro</strong><b style="color:var(--safe-text); white-space:nowrap">up to +8</b></div><p class="small" style="margin:4px 0 0; color:var(--text-2)">4 reviews mention it. Add lights at your gate, or file a streetlight request and upload the receipt.</p></li>
           <li class="inner"><div class="row between" style="flex-wrap:nowrap"><strong>Close the open deposit complaint</strong><b style="color:var(--safe-text); white-space:nowrap">up to +5</b></div><p class="small" style="margin:4px 0 0; color:var(--text-2)">Refund it and publish your 30-day refund policy on the listing.</p></li>
           <li class="inner"><div class="row between" style="flex-wrap:nowrap"><strong>Give 24 hours’ notice before inspections</strong><b style="color:var(--safe-text); white-space:nowrap">up to +3</b></div><p class="small" style="margin:4px 0 0; color:var(--text-2)">Put it in your house rules so residents can confirm it.</p></li>
@@ -46,21 +57,26 @@
 
     <div class="main stack" style="gap:16px">
       <div class="row" data-single role="group" aria-label="Review filter">
-        <button type="button" class="chip" data-toggle aria-pressed="true">Needs a reply · 3</button>
-        <button type="button" class="chip" data-toggle aria-pressed="false">Replied · 14</button>
-        <button type="button" class="chip" data-toggle aria-pressed="false">Disputes · 1</button>
+        <button type="button" class="chip" data-toggle aria-pressed="true">Needs a reply · <span id="count-needs-reply">1</span></button>
+        <button type="button" class="chip" data-toggle aria-pressed="false">All reviews</button>
       </div>
 
-      <article class="review">
+      <article class="review" id="owner-review-box">
         <div class="row between"><strong>Riya · verified resident</strong><span class="tiny muted">3 weeks ago</span></div>
         <p class="tiny muted" style="margin:4px 0 8px">Security 4/5 · Location at night 2/5 · Management 4/5</p>
         <p class="text">Inside I always felt safe — the guard knows every girl by name and the CCTV actually works. The problem is the walk from the metro. After 8 it’s pitch dark…</p>
+        
+        <div id="owner-existing-reply" class="inner" style="margin-top:10px; display:none">
+          <p class="tiny" style="margin:0 0 4px; font-weight:700; color:var(--pink)">Your current reply:</p>
+          <p class="small" id="owner-existing-reply-text" style="margin:0; color:var(--text-2)"></p>
+        </div>
+
         <label class="label" for="reply" style="margin-top:14px">Your public reply</label>
-        <textarea class="textarea" id="reply" rows="3" placeholder="Reply to the issue, not the person"></textarea>
+        <textarea class="textarea" id="reply" rows="3" placeholder="Reply to the issue constructively and respectfully"></textarea>
         <div class="row" style="margin-top:10px">
           <button type="button" class="btn btn-primary" id="post-reply">Post reply</button>
-          <button type="button" class="btn btn-ghost">Attach proof</button>
-          <button type="button" class="btn-link">Dispute this review</button>
+          <button type="button" class="btn btn-ghost" onclick="toast('Proof attachment dialog simulated (prototype).')">Attach proof</button>
+          <button type="button" class="btn-link" onclick="toast('Dispute filed for SheStay moderation.')">Dispute this review</button>
         </div>
       </article>
 
@@ -69,30 +85,335 @@
       </div>
 
       <section class="review" style="border-color:rgba(242,196,109,.45)" aria-labelledby="dsp">
-        <div class="row between"><h2 id="dsp" class="h2" style="font-size:26px">Dispute request</h2><span class="badge badge-warn badge-sm">Under review · day 2 of 5</span></div>
-        <p style="margin:8px 0 0; color:var(--text-2)">Review by “Anonymous” (Mar 2026) — “Staff entered my room without knocking.”</p>
+        <div class="row between"><h2 id="dsp" class="h2" style="font-size:26px">Dispute status</h2><span class="badge badge-warn badge-sm">Under review · day 2 of 5</span></div>
+        <p style="margin:8px 0 0; color:var(--text-2)">Review by “Anonymous” — “Staff entered my room without knocking.”</p>
         <dl class="small" style="margin:12px 0 0; display:grid; grid-template-columns:auto 1fr; gap:6px 14px">
           <dt class="muted">Your reason</dt><dd style="margin:0">Inspection was announced in the residents’ group a day earlier</dd>
           <dt class="muted">Evidence</dt><dd style="margin:0">notice-screenshot.png</dd>
           <dt class="muted">Next</dt><dd style="margin:0">The reviewer can respond. A SheStay moderator decides — never AI alone.</dd>
         </dl>
-        <p class="tiny muted" style="margin:12px 0 0">The review stays visible while it’s under review.</p>
       </section>
 
-      <a href="listing.html" class="small" style="font-weight:600">See your listing as students see it →</a>
+      <a id="owner-listing-link" href="listing.html?id=sunrise" class="small" style="font-weight:600">See your listing as students see it →</a>
     </div>
+  </div>
+
+  <!-- TAB 2: SUBMIT / EDIT PROPERTY FORM -->
+  <div id="tab-form" class="card stack" style="margin-top:10px; display:none; gap:20px">
+    <div>
+      <h2 class="h2" style="font-size:32px">Accommodation Details</h2>
+      <p class="muted small" style="margin:4px 0 0">Add or edit your property details. Saved locally in your browser prototype session.</p>
+    </div>
+
+    <form id="owner-prop-form" class="stack" style="gap:18px" novalidate>
+      <div class="row" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px">
+        <div>
+          <label class="label" for="op-name">Property Name *</label>
+          <input class="input" id="op-name" required placeholder="e.g. Lotus Nest Girls PG">
+        </div>
+        <div>
+          <label class="label" for="op-type">Accommodation Type</label>
+          <select class="select" id="op-type">
+            <option value="PG">PG (Paying Guest)</option>
+            <option value="Hostel">Hostel</option>
+            <option value="Apartment">Apartment / Flat</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px">
+        <div>
+          <label class="label" for="op-city">City *</label>
+          <input class="input" id="op-city" required placeholder="e.g. New Delhi">
+        </div>
+        <div>
+          <label class="label" for="op-area">Area / Locality *</label>
+          <input class="input" id="op-area" required placeholder="e.g. Paschim Vihar">
+        </div>
+      </div>
+
+      <div>
+        <label class="label" for="op-address">Complete Address</label>
+        <input class="input" id="op-address" placeholder="e.g. B-3 Pocket 2, Paschim Vihar, New Delhi">
+      </div>
+
+      <div class="row" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px">
+        <div>
+          <label class="label" for="op-rent">Monthly Rent (₹) *</label>
+          <input class="input" id="op-rent" type="number" min="1000" placeholder="e.g. 9500">
+        </div>
+        <div>
+          <label class="label" for="op-dist">Distance to College/Metro (km)</label>
+          <input class="input" id="op-dist" type="number" step="0.1" placeholder="e.g. 1.2">
+        </div>
+        <div>
+          <label class="label" for="op-curfew">Curfew / Gate Closing Time</label>
+          <input class="input" id="op-curfew" placeholder="e.g. 10:00 PM">
+        </div>
+      </div>
+
+      <div>
+        <label class="label" for="op-desc">Description &amp; House Rules</label>
+        <textarea class="textarea" id="op-desc" rows="3" placeholder="Describe the atmosphere, meal timings, visitor policies, etc."></textarea>
+      </div>
+
+      <!-- Image URL & Preview -->
+      <fieldset class="card">
+        <legend class="label" style="font-size:15px; margin-bottom:8px">Property Photos &amp; Image Preview</legend>
+        <label class="label" for="op-img">Cover Image URL</label>
+        <input class="input" id="op-img" placeholder="https://images.unsplash.com/photo-..." value="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80">
+        <div id="op-img-preview" class="photo" style="height:190px; border-radius:16px; margin-top:10px; overflow:hidden">
+          <img id="op-img-el" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80" style="width:100%; height:100%; object-fit:cover" alt="Property Preview">
+        </div>
+      </fieldset>
+
+      <!-- Facility Selection -->
+      <fieldset class="card">
+        <legend class="label" style="font-size:15px; margin-bottom:8px">Facility Selection</legend>
+        <p class="tiny muted" style="margin:0 0 10px">Click to toggle amenities provided at this property:</p>
+        <div class="row" id="op-facilities-chips">
+          <button type="button" class="chip" data-toggle aria-pressed="true">High-Speed Wi-Fi</button>
+          <button type="button" class="chip" data-toggle aria-pressed="true">Air Conditioned Rooms</button>
+          <button type="button" class="chip" data-toggle aria-pressed="true">3 Meals Included</button>
+          <button type="button" class="chip" data-toggle aria-pressed="true">100% Power Backup</button>
+          <button type="button" class="chip" data-toggle aria-pressed="true">Washing Machines</button>
+          <button type="button" class="chip" data-toggle aria-pressed="true">RO Drinking Water</button>
+          <button type="button" class="chip" data-toggle aria-pressed="false">Study Desks</button>
+          <button type="button" class="chip" data-toggle aria-pressed="false">Daily Housekeeping</button>
+          <button type="button" class="chip" data-toggle aria-pressed="false">Attached Washroom</button>
+        </div>
+      </fieldset>
+
+      <!-- Security Feature Selection -->
+      <fieldset class="card card-alert">
+        <legend class="label" style="font-size:15px; margin-bottom:8px">Security &amp; Safety Features</legend>
+        <p class="tiny muted" style="margin:0 0 10px">Select security infrastructure present (factored into SheStay AI safety score):</p>
+        <div class="stack" style="gap:8px" id="op-security-checks">
+          <label class="check"><input type="checkbox" checked value="24/7 CCTV in Corridors & Entry">24/7 CCTV in corridors and entry gate</label>
+          <label class="check"><input type="checkbox" checked value="Biometric Gate Access">Biometric / RFID gate access control</label>
+          <label class="check"><input type="checkbox" checked value="Full-time Female Warden">Resident full-time female warden</label>
+          <label class="check"><input type="checkbox" checked value="Night Security Guard">Trained nighttime security guard</label>
+          <label class="check"><input type="checkbox" checked value="Visitor Entry Logbook">Visitor identification and logbook system</label>
+          <label class="check"><input type="checkbox" checked value="Fire Safety Sprinklers & Extinguishers">Certified fire extinguishers on each floor</label>
+          <label class="check"><input type="checkbox" value="SOS Emergency Push Buttons">Emergency SOS push buttons in common areas</label>
+        </div>
+      </fieldset>
+
+      <div class="inner small" style="background:var(--chip)">
+        <strong>Prototype Confirmation Note:</strong> This listing will be stored locally in your browser's localStorage. It appears immediately in your Search Results and Listing Detail views on this device.
+      </div>
+
+      <div class="row">
+        <button type="submit" class="btn btn-primary" style="flex:1 1 200px">Save Property Listing</button>
+        <button type="button" class="btn btn-ghost" id="op-btn-reset">Reset Form</button>
+      </div>
+    </form>
   </div>
 </div>
 
 <script src="js/app.js"></script>
+<script src="js/data.js"></script>
 <script>
-  // No backend yet — later: POST the reply to the API
+  const propSelect = document.getElementById('prop');
+  const ownerListingLink = document.getElementById('owner-listing-link');
+  const tabDash = document.getElementById('tab-dash');
+  const tabForm = document.getElementById('tab-form');
+
+  let allProperties = [];
+  let currentProp = null;
+
+  // 1. Tab Switching
+  document.getElementById('owner-tabs').addEventListener('click', e => {
+    const btn = e.target.closest('[data-tab]');
+    if (!btn) return;
+    const tab = btn.dataset.tab;
+    if (tab === 'dash') {
+      tabDash.style.display = 'flex';
+      tabForm.style.display = 'none';
+    } else {
+      tabDash.style.display = 'none';
+      tabForm.style.display = 'flex';
+    }
+  });
+
+  // 2. Image URL live preview
+  const imgInput = document.getElementById('op-img');
+  const imgEl = document.getElementById('op-img-el');
+  imgInput.addEventListener('input', () => {
+    imgEl.src = imgInput.value.trim() || 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80';
+  });
+
+  // 3. Load properties into dropdown
+  async function initProperties() {
+    let apiProps = [];
+    try {
+      const res = await fetchFromApi('/properties');
+      if (res && res.data) apiProps = res.data;
+    } catch (e) {
+      if (typeof LISTINGS !== 'undefined') apiProps = LISTINGS;
+    }
+
+    const localOwnerProps = getStoredOwnerProperties();
+    allProperties = [...localOwnerProps, ...apiProps];
+
+    propSelect.innerHTML = allProperties.map(p => `
+      <option value="${esc(p.id)}">${esc(p.name)} · ${esc(p.area || p.city || '')} ${p.isOwnerSubmitted ? '(Your local listing)' : ''}</option>
+    `).join('');
+
+    // Check if ?id= is in URL
+    const urlParams = new URLSearchParams(location.search);
+    const targetId = urlParams.get('id');
+    if (targetId && allProperties.some(p => p.id === targetId)) {
+      propSelect.value = targetId;
+    }
+
+    updateDashboard(propSelect.value);
+  }
+
+  // 4. Update Dashboard details when property changes
+  function updateDashboard(propId) {
+    currentProp = allProperties.find(p => p.id === propId) || allProperties[0];
+    if (!currentProp) return;
+
+    const score = currentProp.score || 63;
+    const level = scoreLevel(score);
+
+    document.getElementById('owner-score-num').textContent = score;
+    const badge = document.getElementById('owner-score-badge');
+    badge.className = `badge badge-${level.key}`;
+    badge.textContent = `${level.key === 'safe' ? '✓' : '!'} ${level.label}`;
+
+    ownerListingLink.href = `listing.html?id=${encodeURIComponent(currentProp.id)}`;
+
+    // Check existing stored reply for the demo review
+    const replies = getStoredOwnerReplies();
+    const existingReply = replies['rev-1'] || replies[currentProp.id + '-reply'];
+    const existingReplyBox = document.getElementById('owner-existing-reply');
+    const existingReplyText = document.getElementById('owner-existing-reply-text');
+
+    if (existingReply) {
+      existingReplyBox.style.display = 'block';
+      existingReplyText.textContent = existingReply.text;
+    } else {
+      existingReplyBox.style.display = 'none';
+    }
+  }
+
+  propSelect.addEventListener('change', () => {
+    updateDashboard(propSelect.value);
+  });
+
+  // 5. Post reply to reviews
   document.getElementById('post-reply').addEventListener('click', () => {
     const box = document.getElementById('reply');
-    if (!box.value.trim()) { box.focus(); return toast('Write a reply first'); }
+    const replyText = box.value.trim();
+    if (!replyText) {
+      box.focus();
+      return toast('Please write a reply first.');
+    }
+
+    // Save reply for this review in localStorage
+    saveStoredOwnerReply('rev-1', replyText);
+    if (currentProp) {
+      saveStoredOwnerReply(currentProp.id + '-reply', replyText);
+    }
+
     box.value = '';
-    toast('Reply posted publicly');
+    toast('Reply posted and saved! Visible on your listing.');
+    updateDashboard(propSelect.value);
   });
+
+  // 6. Handle New Property Submission / Editing
+  document.getElementById('owner-prop-form').addEventListener('submit', e => {
+    e.preventDefault();
+
+    const name = document.getElementById('op-name').value.trim();
+    const type = document.getElementById('op-type').value;
+    const city = document.getElementById('op-city').value.trim();
+    const area = document.getElementById('op-area').value.trim();
+    const address = document.getElementById('op-address').value.trim();
+    const rent = parseInt(document.getElementById('op-rent').value, 10);
+    const dist = parseFloat(document.getElementById('op-dist').value) || 1.2;
+    const curfew = document.getElementById('op-curfew').value.trim() || '10:00 PM';
+    const desc = document.getElementById('op-desc').value.trim();
+    const imgUrl = document.getElementById('op-img').value.trim();
+
+    if (!name || !city || !area || isNaN(rent)) {
+      toast('Please fill all required fields marked with *');
+      return;
+    }
+
+    // Facilities from active chips
+    const facilities = [];
+    document.querySelectorAll('#op-facilities-chips .chip[aria-pressed="true"]').forEach(btn => {
+      facilities.push(btn.textContent.trim());
+    });
+
+    // Security features from checked boxes
+    const securityFeatures = [];
+    document.querySelectorAll('#op-security-checks input:checked').forEach(input => {
+      securityFeatures.push(input.value);
+    });
+
+    // Compute heuristic score
+    let baseScore = 60;
+    if (securityFeatures.length >= 5) baseScore += 20;
+    else if (securityFeatures.length >= 3) baseScore += 10;
+    if (facilities.some(f => f.includes('Meals'))) baseScore += 5;
+    const calculatedScore = Math.min(95, baseScore);
+
+    const newPropertyId = 'owner-prop-' + Date.now();
+
+    const newProperty = {
+      id: newPropertyId,
+      name,
+      type,
+      city,
+      area,
+      address: address || `${area}, ${city}`,
+      monthlyRent: rent,
+      price: rent,
+      distanceKm: dist,
+      commute: `${Math.round(dist * 10)} min walk to transit`,
+      womenOnly: true,
+      meals: facilities.some(f => f.includes('Meals')),
+      tiffinNearby: true,
+      curfewTime: curfew,
+      description: desc || `${name} is a verified accommodation in ${area}, ${city} with active security controls.`,
+      facilities,
+      securityFeatures,
+      images: [
+        imgUrl || 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80'
+      ],
+      coordinates: { lat: 28.6772, lng: 77.1176 },
+      score: calculatedScore,
+      verifiedReviews: 1,
+      totalReviews: 1,
+      flags: [],
+      isOwnerSubmitted: true,
+      verificationStatus: 'Owner-Submitted Listing (Browser Prototype)',
+      reviews: []
+    };
+
+    saveStoredOwnerProperty(newProperty);
+    toast('Property listing saved successfully!');
+
+    // Refresh dropdown and switch to dashboard
+    initProperties().then(() => {
+      propSelect.value = newPropertyId;
+      updateDashboard(newPropertyId);
+      document.querySelector('[data-tab="dash"]').click();
+    });
+  });
+
+  // Reset form
+  document.getElementById('op-btn-reset').addEventListener('click', () => {
+    document.getElementById('owner-prop-form').reset();
+    imgEl.src = 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80';
+    toast('Form reset');
+  });
+
+  initProperties();
 </script>
 </body>
 </html>

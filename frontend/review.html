@@ -12,9 +12,9 @@
 <div class="container container-narrow">
 
   <header class="site-header" style="justify-content:flex-start">
-    <a href="listing.html" class="back" aria-label="Back to listing">
+    <a href="listing.html" id="back-to-listing" class="back" aria-label="Back to listing">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
-    <span class="small muted">Sunrise Residency PG · Paschim Vihar</span>
+    <span class="small muted" id="review-prop-header">Loading property details…</span>
   </header>
 
   <main>
@@ -48,25 +48,31 @@
         <div class="stack" style="gap:14px">
           <div>
             <p class="small" style="margin:0 0 6px; font-weight:600" id="r1">Physical security <span class="tiny muted">locks, CCTV, guard</span></p>
-            <div class="rating" data-single role="group" aria-labelledby="r1">
+            <div class="rating" data-single role="group" aria-labelledby="r1" id="group-sec">
               <button type="button" class="chip" data-toggle aria-pressed="false">1</button><button type="button" class="chip" data-toggle aria-pressed="false">2</button><button type="button" class="chip" data-toggle aria-pressed="false">3</button><button type="button" class="chip" data-toggle aria-pressed="false">4</button><button type="button" class="chip" data-toggle aria-pressed="false">5</button>
             </div>
           </div>
           <div>
             <p class="small" style="margin:0 0 6px; font-weight:600" id="r2">Location at night <span class="tiny muted">lighting, the walk home</span></p>
-            <div class="rating" data-single role="group" aria-labelledby="r2">
+            <div class="rating" data-single role="group" aria-labelledby="r2" id="group-loc">
               <button type="button" class="chip" data-toggle aria-pressed="false">1</button><button type="button" class="chip" data-toggle aria-pressed="false">2</button><button type="button" class="chip" data-toggle aria-pressed="false">3</button><button type="button" class="chip" data-toggle aria-pressed="false">4</button><button type="button" class="chip" data-toggle aria-pressed="false">5</button>
             </div>
           </div>
           <div>
             <p class="small" style="margin:0 0 6px; font-weight:600" id="r3">Owner &amp; staff behaviour <span class="tiny muted">respect, privacy, deposits</span></p>
-            <div class="rating" data-single role="group" aria-labelledby="r3">
+            <div class="rating" data-single role="group" aria-labelledby="r3" id="group-mgmt">
+              <button type="button" class="chip" data-toggle aria-pressed="false">1</button><button type="button" class="chip" data-toggle aria-pressed="false">2</button><button type="button" class="chip" data-toggle aria-pressed="false">3</button><button type="button" class="chip" data-toggle aria-pressed="false">4</button><button type="button" class="chip" data-toggle aria-pressed="false">5</button>
+            </div>
+          </div>
+          <div>
+            <p class="small" style="margin:0 0 6px; font-weight:600" id="r-clean">Cleanliness &amp; hygiene <span class="tiny muted">water, rooms, sanitation</span></p>
+            <div class="rating" data-single role="group" aria-labelledby="r-clean" id="group-clean">
               <button type="button" class="chip" data-toggle aria-pressed="false">1</button><button type="button" class="chip" data-toggle aria-pressed="false">2</button><button type="button" class="chip" data-toggle aria-pressed="false">3</button><button type="button" class="chip" data-toggle aria-pressed="false">4</button><button type="button" class="chip" data-toggle aria-pressed="false">5</button>
             </div>
           </div>
           <div>
             <p class="small" style="margin:0 0 6px; font-weight:600" id="r4">Would you send your younger sister here?</p>
-            <div class="row" data-single role="group" aria-labelledby="r4">
+            <div class="row" data-single role="group" aria-labelledby="r4" id="group-sister">
               <button type="button" class="chip" data-toggle aria-pressed="false">Yes</button>
               <button type="button" class="chip" data-toggle aria-pressed="false">Yes, with conditions</button>
               <button type="button" class="chip" data-toggle aria-pressed="false">No</button>
@@ -121,7 +127,33 @@
 </div>
 
 <script src="js/app.js"></script>
+<script src="js/data.js"></script>
 <script>
+  const params = new URLSearchParams(location.search);
+  const propertyId = (params.get('id') || 'sunrise').toLowerCase();
+  const editReviewId = params.get('edit');
+
+  const backLink = document.getElementById('back-to-listing');
+  if (backLink) backLink.href = `listing.html?id=${encodeURIComponent(propertyId)}`;
+
+  // Display property name in header
+  async function loadHeader() {
+    let propName = 'Sunrise Residency PG · Paschim Vihar';
+    try {
+      const res = await fetchFromApi(`/properties/${encodeURIComponent(propertyId)}`);
+      if (res && res.data) {
+        propName = `${res.data.name} · ${res.data.area || res.data.city}`;
+      }
+    } catch (e) {
+      const localProps = getStoredOwnerProperties();
+      const match = localProps.find(p => p.id === propertyId) || (typeof LISTINGS !== 'undefined' ? LISTINGS.find(p => p.id === propertyId) : null);
+      if (match) propName = `${match.name} · ${match.area || match.city}`;
+    }
+    const headerEl = document.getElementById('review-prop-header');
+    if (headerEl) headerEl.textContent = propName;
+  }
+  loadHeader();
+
   // Show chosen file names
   const showNames = (input, out) => input.addEventListener('change', () => {
     out.textContent = [...input.files].map(f => f.name).join(', ') || out.textContent;
@@ -134,10 +166,104 @@
     document.getElementById('report-details').hidden = !e.target.checked;
   });
 
-  // No backend yet — later: send FormData to the API here
+  // Helper to read rating from button group
+  function getGroupRating(groupId) {
+    const el = document.querySelector(`#${groupId} [aria-pressed="true"]`);
+    return el ? parseInt(el.textContent.trim(), 10) : 0;
+  }
+  function setGroupRating(groupId, val) {
+    const btn = [...document.querySelectorAll(`#${groupId} button`)].find(b => b.textContent.trim() == String(val));
+    if (btn) btn.setAttribute('aria-pressed', 'true');
+  }
+
+  // If in edit mode, populate existing local review
+  if (editReviewId) {
+    const localReviews = getLocalReviews(propertyId);
+    const existing = localReviews.find(r => r.id === editReviewId);
+    if (existing) {
+      if (existing.ratings) {
+        if (existing.ratings.security) setGroupRating('group-sec', existing.ratings.security);
+        if (existing.ratings.location) setGroupRating('group-loc', existing.ratings.location);
+        if (existing.ratings.management) setGroupRating('group-mgmt', existing.ratings.management);
+        if (existing.ratings.cleanliness) setGroupRating('group-clean', existing.ratings.cleanliness);
+      }
+      if (existing.sisterChoice) {
+        const btn = [...document.querySelectorAll('#group-sister button')].find(b => b.textContent.trim() === existing.sisterChoice);
+        if (btn) btn.setAttribute('aria-pressed', 'true');
+      }
+      if (existing.text) document.getElementById('text').value = existing.text;
+      if (existing.from) document.getElementById('from').value = existing.from;
+      if (existing.to) document.getElementById('to').value = existing.to;
+
+      const submitBtn = document.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.textContent = 'Save review changes';
+    }
+  }
+
+  // Handle Review Submission
   document.getElementById('review-form').addEventListener('submit', e => {
     e.preventDefault();
-    toast('Thank you! We’ll verify your review within 24 hours.');
+
+    const secRating = getGroupRating('group-sec') || 4;
+    const locRating = getGroupRating('group-loc') || 4;
+    const mgmtRating = getGroupRating('group-mgmt') || 4;
+    const cleanRating = getGroupRating('group-clean') || 4;
+    const sisterChoice = document.querySelector('#group-sister [aria-pressed="true"]')?.textContent.trim() || 'Yes';
+    const textVal = document.getElementById('text').value.trim();
+
+    if (!textVal) {
+      toast('Please write a short description of your experience.');
+      document.getElementById('text').focus();
+      return;
+    }
+
+    const proofEl = document.querySelector('input[name="proof"]:checked');
+    const proofType = proofEl ? proofEl.value : 'agreement';
+    const proofFileName = document.getElementById('proof-name').textContent;
+    const fromMonth = document.getElementById('from').value;
+    const toMonth = document.getElementById('to').value;
+    const isAnonymous = document.querySelector('.card-glass input[type="checkbox"]').checked;
+    const hasReport = document.getElementById('report').checked;
+    const issueKind = hasReport ? document.getElementById('kind').value : null;
+
+    const reviewObj = {
+      id: editReviewId || ('user-rev-' + Date.now()),
+      propertyId: propertyId,
+      author: isAnonymous ? 'Anonymous' : 'Verified resident',
+      role: isAnonymous ? 'Verified resident' : 'University student',
+      avatar: isAnonymous ? 'A' : 'V',
+      date: 'Just now',
+      stayPeriod: (fromMonth && toMonth) ? `${fromMonth} to ${toMonth}` : 'Verified stay',
+      from: fromMonth,
+      to: toMonth,
+      isVerified: true,
+      proofType: proofType,
+      proofFile: proofFileName,
+      ratings: {
+        security: secRating,
+        location: locRating,
+        management: mgmtRating,
+        cleanliness: cleanRating,
+        overall: Math.round((secRating + locRating + mgmtRating + cleanRating) / 4)
+      },
+      sisterChoice: sisterChoice,
+      text: textVal,
+      hasReportedIssue: hasReport,
+      reportedIssueKind: issueKind,
+      aiCheck: {
+        status: 'likely genuine',
+        score: 92
+      },
+      helpfulCount: 0,
+      createdAt: new Date().toISOString()
+    };
+
+    saveLocalReview(propertyId, reviewObj);
+    toast(editReviewId ? 'Review changes saved!' : 'Review saved locally! Redirecting to listing...');
+
+    setTimeout(() => {
+      location.href = `listing.html?id=${encodeURIComponent(propertyId)}`;
+    }, 1200);
   });
 </script>
 </body>

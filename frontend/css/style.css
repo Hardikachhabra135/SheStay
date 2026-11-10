@@ -217,3 +217,13 @@ legend { padding: 0; }
 /* toast */
 .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); padding: 12px 18px; border-radius: 999px; background: #F7E6EA; color: var(--ink); font-weight: 600; font-size: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.4); z-index: 1000; }
 .toast[hidden] { display: none; }
+
+/* ---------- autocomplete dropdown ---------- */
+.autocomplete-wrap { position: relative; }
+.autocomplete-box { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: #1E1317; border: 1px solid var(--line-strong); border-radius: 16px; box-shadow: 0 16px 40px rgba(0,0,0,.7); z-index: 100; max-height: 240px; overflow-y: auto; list-style: none; padding: 4px 0; margin: 0; }
+.autocomplete-box[hidden] { display: none; }
+.suggest-item { padding: 10px 14px; display: flex; flex-direction: column; gap: 2px; cursor: pointer; border-bottom: 1px solid rgba(242,182,195,.08); }
+.suggest-item:last-child { border-bottom: none; }
+.suggest-item:hover, .suggest-item:focus { background: rgba(242,182,195,.14); }
+.suggest-item strong { font-size: 14px; color: var(--text); }
+.suggest-item span { font-size: 12px; color: var(--muted); }

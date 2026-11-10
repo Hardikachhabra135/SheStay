@@ -25,8 +25,18 @@
     <h1 class="h1" id="results-title">Places near BVCOE</h1>
     <p class="muted small" style="margin:0 0 16px">Ranked by safety score, safest first</p>
 
-    <div class="row" style="margin-bottom:10px" id="filters">
-      <button type="button" class="chip" data-toggle data-filter="near" aria-pressed="true">Within 3 km</button>
+    <!-- Distance Radius Filter Group -->
+    <div class="row" style="margin-bottom:8px; align-items:center; gap:6px" id="radius-filters" data-single>
+      <span class="tiny muted" style="font-weight:600">Distance:</span>
+      <button type="button" class="chip" data-toggle data-radius="all" aria-pressed="true" style="font-size:12px; padding:0 12px; min-height:34px">Any distance</button>
+      <button type="button" class="chip" data-toggle data-radius="1" aria-pressed="false" style="font-size:12px; padding:0 12px; min-height:34px">Within 1 km</button>
+      <button type="button" class="chip" data-toggle data-radius="3" aria-pressed="false" style="font-size:12px; padding:0 12px; min-height:34px">Within 3 km</button>
+      <button type="button" class="chip" data-toggle data-radius="5" aria-pressed="false" style="font-size:12px; padding:0 12px; min-height:34px">Within 5 km</button>
+      <button type="button" class="chip" data-toggle data-radius="10" aria-pressed="false" style="font-size:12px; padding:0 12px; min-height:34px">Within 10 km</button>
+      <button type="button" class="chip" data-toggle data-radius="15" aria-pressed="false" style="font-size:12px; padding:0 12px; min-height:34px">Within 15 km</button>
+    </div>
+
+    <div class="row" style="margin-bottom:12px" id="filters">
       <button type="button" class="chip" data-toggle data-filter="safe" aria-pressed="false">Score 75+</button>
       <button type="button" class="chip" data-toggle data-filter="meals" aria-pressed="false">Meals included</button>
       <button type="button" class="chip" data-toggle data-filter="cheap" aria-pressed="false">Under ₹9,000</button>

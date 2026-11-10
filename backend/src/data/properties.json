@@ -1,0 +1,1137 @@
+[
+  {
+    "id": "iilm-saheli-residency",
+    "name": "Saheli Executive Women's PG",
+    "type": "PG",
+    "description": "High-security student living directly across Knowledge Park II, Greater Noida. Walking distance to IILM University, biometric turnstiles, and 24/7 dedicated female warden.",
+    "address": "Plot 14, Knowledge Park II",
+    "locality": "Knowledge Park II",
+    "city": "Greater Noida",
+    "state": "Delhi NCR",
+    "pincode": "201306",
+    "monthlyRent": 10500,
+    "price": 10500,
+    "distanceKm": 0.4,
+    "commute": "5 min walk to IILM University",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "10:00 PM",
+    "coordinates": { "lat": 28.4615, "lng": 77.4950 },
+    "nearbyColleges": [
+      { "id": "iilm-greater-noida", "name": "IILM University, Greater Noida", "distanceKm": 0.4, "commute": "5 min walk" },
+      { "id": "sharda-greater-noida", "name": "Sharda University, Greater Noida", "distanceKm": 1.5, "commute": "5 min e-rickshaw" }
+    ],
+    "nearbyTransport": [
+      { "name": "Knowledge Park II Aqua Line Metro", "distanceKm": 0.3, "commute": "4 min walk" }
+    ],
+    "facilities": [
+      "High-Speed Wi-Fi",
+      "Air Conditioned Rooms",
+      "3 Home-cooked Meals",
+      "100% Power Backup",
+      "Washing Machines",
+      "RO Drinking Water",
+      "Study Desk & Wardrobe"
+    ],
+    "securityFeatures": [
+      "24/7 CCTV in Corridors & Entry",
+      "Biometric / RFID Gate Access",
+      "Resident Female Warden",
+      "Night Security Guard",
+      "Visitor Entry Logbook & Verification",
+      "Fire Extinguishers on Every Floor"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98120-11223", "email": "saheli.kp2@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 88,
+    "verifiedReviews": 38,
+    "totalReviews": 42,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 92, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 86, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 88, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 89, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 82, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 88,
+      "verdict": "Safe",
+      "infrastructureScore": 92,
+      "reviewSentiment": "Highly positive from IILM and Greater Noida students; praises proximity and secure campus transit lane",
+      "potentialRiskIndicators": [
+        "Knowledge Park metro service frequency drops after 9:30 PM"
+      ],
+      "positiveSafetyIndicators": [
+        "Situated within 400m of IILM University main entrance gate",
+        "Biometric turnstile preventing unregistered male visitor entry",
+        "Full-time female resident warden sleeping on site"
+      ],
+      "missingInformation": [],
+      "summary": "Saheli Executive PG offers high safety compliance for students of IILM University and nearby Knowledge Park institutions. Well-illuminated pathway to the metro station.",
+      "recommendations": [
+        "Optimal choice for IILM University and Sharda University female students seeking walking distance.",
+        "Ensure warden is notified in advance for late weekend lab schedules."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:00:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-sh-1",
+        "author": "Kritika S.",
+        "role": "IILM B.Tech Student",
+        "avatar": "K",
+        "date": "1 week ago",
+        "stayPeriod": "2026",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 96 },
+        "ratings": { "security": 5, "location": 5, "management": 4, "cleanliness": 5, "overall": 5 },
+        "text": "Walking to IILM takes barely 5 minutes! The street has streetlights all the way, the food is hygienic, and the warden ma'am is very protective.",
+        "helpfulCount": 29,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "galgotias-campus-haven",
+    "name": "Yamuna Haven Women's Hostel",
+    "type": "Hostel",
+    "description": "Secure, modern student hostel on the Yamuna Expressway near Galgotias University. Dedicated private shuttle van for female students, gated security, and study rooms.",
+    "address": "Sector 17A, Yamuna Expressway",
+    "locality": "Sector 17A",
+    "city": "Greater Noida",
+    "state": "Delhi NCR",
+    "pincode": "203201",
+    "monthlyRent": 9200,
+    "price": 9200,
+    "distanceKm": 1.1,
+    "commute": "12 min walk / 3 min hostel shuttle to Galgotias Univ",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": false,
+    "curfewTime": "9:30 PM",
+    "coordinates": { "lat": 28.3680, "lng": 77.5380 },
+    "nearbyColleges": [
+      { "id": "galgotias-greater-noida", "name": "Galgotias University, Greater Noida", "distanceKm": 1.1, "commute": "Hostel shuttle / 12 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Hostel Free College Shuttle", "distanceKm": 0.0, "commute": "Direct at gate" },
+      { "name": "Yamuna Expressway Bus Stop", "distanceKm": 0.8, "commute": "9 min walk" }
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Air Cooled / AC Options",
+      "3 Meals Included",
+      "Hostel Shuttle Service",
+      "Power Backup",
+      "Gym & Badminton Court"
+    ],
+    "securityFeatures": [
+      "24/7 Security Guard at Main Perimeter Gate",
+      "CCTV Surveillance Across Corridors and Mess",
+      "Fingerprint Scanner at Gate",
+      "Female Warden on Duty",
+      "Verified Shuttle Driver with Background Check"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98730-44556", "email": "yamuna.haven@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 81,
+    "verifiedReviews": 31,
+    "totalReviews": 35,
+    "flags": [
+      { "level": "warn", "text": "Yamuna Expressway highway frontage requires avoiding solo night walks" }
+    ],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 88, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 72, "weight": 25, "label": "Use caution" },
+      "managementBehaviour": { "score": 84, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 82, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 79, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 81,
+      "verdict": "Safe",
+      "infrastructureScore": 88,
+      "reviewSentiment": "Praise for hostel shuttle and internal security; residents advise against walking on expressway shoulder alone after dark",
+      "potentialRiskIndicators": [
+        "Highway service lane lacks pedestrian footpaths after sunset; use the hostel van"
+      ],
+      "positiveSafetyIndicators": [
+        "Guaranteed campus van drop-and-pickup for all shifts",
+        "Strict perimeter security with gate logbook"
+      ],
+      "missingInformation": [],
+      "summary": "Inside, security is robust with biometric gates and dedicated transport. Highway location is mitigated by the private hostel shuttle.",
+      "recommendations": [
+        "Always use the designated hostel shuttle van rather than walking the highway service lane after dark."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:10:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-yh-1",
+        "author": "Anjali P.",
+        "role": "Galgotias University 2nd Year",
+        "avatar": "A",
+        "date": "2 weeks ago",
+        "stayPeriod": "2025–Present",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 93 },
+        "ratings": { "security": 5, "location": 3, "management": 4, "cleanliness": 4, "overall": 4 },
+        "text": "The hostel shuttle van is a lifesaver for Galgotias classes! Inside the hostel is 100% safe, guards are polite, and warden ma'am is very supportive.",
+        "helpfulCount": 24,
+        "sisterChoice": "Yes, with conditions"
+      }
+    ]
+  },
+  {
+    "id": "du-north-campus-nest",
+    "name": "Kalyani Enclave Girls PG",
+    "type": "PG",
+    "description": "Premier student accommodation in Kamla Nagar, directly behind Delhi University North Campus. Secure gated lane, home-cooked food, and study spaces.",
+    "address": "B-Block, Kamla Nagar",
+    "locality": "North Campus",
+    "city": "New Delhi",
+    "state": "Delhi NCR",
+    "pincode": "110007",
+    "monthlyRent": 13500,
+    "price": 13500,
+    "distanceKm": 0.6,
+    "commute": "8 min walk to DU North Campus & Hansraj",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "10:00 PM",
+    "coordinates": { "lat": 28.6845, "lng": 77.2065 },
+    "nearbyColleges": [
+      { "id": "delhi-university-north", "name": "Delhi University (North Campus), Delhi", "distanceKm": 0.6, "commute": "8 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Vishwa Vidyalaya Metro (Yellow Line)", "distanceKm": 0.9, "commute": "10 min walk" }
+    ],
+    "facilities": [
+      "Gigabit Wi-Fi",
+      "Air Conditioning",
+      "3 Nutritious Meals",
+      "Inverter Power Backup",
+      "Daily Housekeeping",
+      "Terrace Garden & Study Lounge"
+    ],
+    "securityFeatures": [
+      "24/7 CCTV in Corridors & Entry",
+      "Digital Biometric Door Locks",
+      "Senior Female Warden on Premises",
+      "Night Security Guard",
+      "Gated Residential Lane with Barrier"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98104-33221", "email": "kalyani.du@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 90,
+    "verifiedReviews": 49,
+    "totalReviews": 54,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 94, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 92, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 88, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 90, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 85, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 90,
+      "verdict": "Safe",
+      "infrastructureScore": 94,
+      "reviewSentiment": "Exemplary feedback; highly praised for location safety in bustling student market and strict access control",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Located inside active student residential colony with active streetlighting",
+        "Walking access to DU colleges avoids motorized transit risks",
+        "Digital biometric entry and round-the-clock female warden"
+      ],
+      "missingInformation": [],
+      "summary": "Gold standard North Campus living. Offers the perfect balance of student independence, safe pedestrian routes, and reliable physical security.",
+      "recommendations": [
+        "Highly recommended for DU undergraduate scholars seeking walking proximity to lectures and library."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:15:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-du-1",
+        "author": "Tanvi R.",
+        "role": "Miranda House Scholar",
+        "avatar": "T",
+        "date": "3 weeks ago",
+        "stayPeriod": "2025–Present",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 98 },
+        "ratings": { "security": 5, "location": 5, "management": 5, "cleanliness": 5, "overall": 5 },
+        "text": "The best PG around North Campus! Walking back from the university library at 9:30 PM is totally safe because Kamla Nagar market is always bustling and bright.",
+        "helpfulCount": 42,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "cu-gharuan-residence",
+    "name": "Kharar Heights Women's Living",
+    "type": "PG",
+    "description": "Secure student PG in Kharar close to Chandigarh University (Gharuan). Offers AC rooms, high-speed Wi-Fi, 3 Punjabi home-style meals, and college cab assistance.",
+    "address": "Near NH-95, Kharar",
+    "locality": "Kharar (near CU)",
+    "city": "Mohali",
+    "state": "Punjab & Chandigarh",
+    "pincode": "140413",
+    "monthlyRent": 8800,
+    "price": 8800,
+    "distanceKm": 2.2,
+    "commute": "6 min auto / direct CU bus to Chandigarh University",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "9:30 PM",
+    "coordinates": { "lat": 30.7550, "lng": 76.5920 },
+    "nearbyColleges": [
+      { "id": "chandigarh-university-mohali", "name": "Chandigarh University, Mohali", "distanceKm": 2.2, "commute": "6 min auto / college bus" }
+    ],
+    "nearbyTransport": [
+      { "name": "Kharar Bus Stand", "distanceKm": 1.2, "commute": "5 min auto" }
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Air Conditioning",
+      "3 Meals Included",
+      "RO Water",
+      "Power Backup",
+      "Study Tables"
+    ],
+    "securityFeatures": [
+      "24/7 CCTV Surveillance",
+      "Biometric Fingerprint Scanner",
+      "Full-time Female Warden",
+      "Night Security Guard",
+      "Visitor Restrictions After 7 PM"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98177-88990", "email": "kharar.heights@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 83,
+    "verifiedReviews": 28,
+    "totalReviews": 32,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 86, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 80, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 85, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 84, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 80, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 83,
+      "verdict": "Safe",
+      "infrastructureScore": 86,
+      "reviewSentiment": "Positive; appreciated by Chandigarh University engineering students for safe transportation and respectful warden",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Situated on main Kharar-Ludhiana road with continuous auto service",
+        "Biometric gate logs and night security guard stationed"
+      ],
+      "missingInformation": [],
+      "summary": "Dependable option for Chandigarh University female students. Strong security framework with good access to campus bus stops.",
+      "recommendations": [
+        "Coordinate with fellow residents for shared auto transit to CU morning lectures."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:20:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-cu-1",
+        "author": "Simranjeet K.",
+        "role": "CU B.Tech CSE",
+        "avatar": "S",
+        "date": "1 month ago",
+        "stayPeriod": "2026",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 94 },
+        "ratings": { "security": 5, "location": 4, "management": 4, "cleanliness": 4, "overall": 4 },
+        "text": "Very peaceful for studying, reliable Wi-Fi, and catching the CU bus right at the road corner is super convenient and safe.",
+        "helpfulCount": 21,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "vit-katpadi-haven",
+    "name": "Vaigai Women's Stay",
+    "type": "Hostel",
+    "description": "High-security student accommodation right next to Katpadi Junction and VIT Vellore Main Gate. Features biometric turnstiles, South/North Indian food, and backup generators.",
+    "address": "Chittoor Main Road, Katpadi",
+    "locality": "Katpadi (VIT Area)",
+    "city": "Vellore",
+    "state": "Tamil Nadu",
+    "pincode": "632014",
+    "monthlyRent": 8500,
+    "price": 8500,
+    "distanceKm": 0.5,
+    "commute": "6 min walk to VIT Vellore Main Gate",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "9:00 PM",
+    "coordinates": { "lat": 12.9730, "lng": 79.1530 },
+    "nearbyColleges": [
+      { "id": "vit-vellore", "name": "VIT Vellore (Vellore Institute of Technology)", "distanceKm": 0.5, "commute": "6 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Katpadi Junction Railway Station", "distanceKm": 0.7, "commute": "8 min walk" }
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "AC / Non-AC Rooms",
+      "3 Meals (South & North Indian options)",
+      "RO Water Coolers",
+      "Automatic Washing Machines",
+      "Power Backup"
+    ],
+    "securityFeatures": [
+      "Biometric Fingerprint Gate Entry",
+      "24/7 CCTV in Entrances and Corridors",
+      "Resident Female Warden",
+      "Two Stationed Night Guards",
+      "Emergency Contact Linkage with Local Katpadi Police"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-94420-55667", "email": "vaigai.katpadi@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 91,
+    "verifiedReviews": 45,
+    "totalReviews": 48,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 95, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 92, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 88, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 90, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 88, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 91,
+      "verdict": "Safe",
+      "infrastructureScore": 95,
+      "reviewSentiment": "Superb ratings from VIT Vellore students; exceptional proximity to Katpadi railway station and campus",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Just 500 meters from VIT main gate along broad, active road",
+        "Double guard shift and strict biometric visitor rules"
+      ],
+      "missingInformation": [],
+      "summary": "Excellent accommodation for VIT Vellore scholars. High level of infrastructure security and quick transit access.",
+      "recommendations": [
+        "Book well in advance as Katpadi rooms fill rapidly before semester commencement."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:25:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-vit-1",
+        "author": "Deepika N.",
+        "role": "VIT Vellore ECE",
+        "avatar": "D",
+        "date": "2 weeks ago",
+        "stayPeriod": "2025–Present",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 97 },
+        "ratings": { "security": 5, "location": 5, "management": 5, "cleanliness": 4, "overall": 5 },
+        "text": "The safest place outside campus for VIT girls. Only 6 minutes walk to the gate, and the biometric entrance gives total peace of mind.",
+        "helpfulCount": 37,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "christ-koramangala-studio",
+    "name": "Kaveri Studio for Women",
+    "type": "Apartment",
+    "description": "Boutique furnished studio apartments on Hosur Road, directly opposite Christ University Central Campus. Keyless digital locks, CCTV, and cafe-style dining.",
+    "address": "Hosur Road, DRC Post, Koramangala",
+    "locality": "Koramangala",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560029",
+    "monthlyRent": 17500,
+    "price": 17500,
+    "distanceKm": 0.3,
+    "commute": "4 min walk to Christ University Main Gate",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "10:30 PM",
+    "coordinates": { "lat": 12.9360, "lng": 77.6080 },
+    "nearbyColleges": [
+      { "id": "christ-university-bengaluru", "name": "Christ University, Bengaluru", "distanceKm": 0.3, "commute": "4 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Dairy Circle Bus Terminus", "distanceKm": 0.5, "commute": "6 min walk" },
+      { "name": "Rashtreeya Vidyalaya Road Metro", "distanceKm": 2.1, "commute": "8 min cab" }
+    ],
+    "facilities": [
+      "High-speed Fiber Wi-Fi",
+      "Air Conditioning",
+      "Organic Breakfast & Dinner",
+      "100% Inverter Backup",
+      "Housekeeping & Laundry",
+      "Study Pods & Co-working Lounge"
+    ],
+    "securityFeatures": [
+      "App-controlled Digital Door Locks",
+      "24/7 Guarded Front Desk & Concierge",
+      "CCTV Monitoring on All Floors",
+      "Resident Female Manager",
+      "Fire Safety Sprinklers & Smoke Detectors"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-80255-77889", "email": "kaveri.christ@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 93,
+    "verifiedReviews": 56,
+    "totalReviews": 60,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 96, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 94, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 92, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 92, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 90, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 93,
+      "verdict": "Safe",
+      "infrastructureScore": 96,
+      "reviewSentiment": "Exceptional reviews from Christ University students and young tech professionals in Koramangala",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Unbeatable 300-meter walk to Christ University gate",
+        "Smart digital locks and professional front-desk staff"
+      ],
+      "missingInformation": [],
+      "summary": "Top-tier student living for Christ University. High independent security combined with vibrant Koramangala amenities.",
+      "recommendations": [
+        "Ideal for Christ University scholars seeking modern, independent, and high-security living."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:30:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-ch-1",
+        "author": "Shreya G.",
+        "role": "Christ University BBA Scholar",
+        "avatar": "S",
+        "date": "1 week ago",
+        "stayPeriod": "2025–Present",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 99 },
+        "ratings": { "security": 5, "location": 5, "management": 5, "cleanliness": 5, "overall": 5 },
+        "text": "Living right opposite Christ campus saves so much time! You never have to worry about Bengaluru traffic or late return safety.",
+        "helpfulCount": 48,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "symbiosis-viman-nagar-pg",
+    "name": "Sahyadri Women's Enclave",
+    "type": "PG",
+    "description": "Safe, vibrant women's PG in Viman Nagar near Symbiosis campuses and Phoenix Marketcity. Guarded society, CCTV, Wi-Fi, and study rooms.",
+    "address": "Clover Park, Viman Nagar",
+    "locality": "Viman Nagar",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "pincode": "411014",
+    "monthlyRent": 14000,
+    "price": 14000,
+    "distanceKm": 0.8,
+    "commute": "10 min walk to Symbiosis Viman Nagar Campus",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "10:30 PM",
+    "coordinates": { "lat": 18.5670, "lng": 73.9150 },
+    "nearbyColleges": [
+      { "id": "symbiosis-pune", "name": "Symbiosis International University, Pune", "distanceKm": 0.8, "commute": "10 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Viman Nagar Metro Station (Pune Metro)", "distanceKm": 0.6, "commute": "7 min walk" },
+      { "name": "Pune International Airport", "distanceKm": 2.5, "commute": "10 min cab" }
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Air Conditioned Rooms",
+      "3 Meals Included",
+      "Power Backup",
+      "Washing Machines",
+      "Attached Balconies"
+    ],
+    "securityFeatures": [
+      "24/7 Gated Society Security Checkpoint",
+      "CCTV Monitoring Across Gates & Corridors",
+      "Female Warden On-Site",
+      "Night Security Guard",
+      "Visitor Entry Pass Required"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98230-11223", "email": "sahyadri.viman@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 89,
+    "verifiedReviews": 42,
+    "totalReviews": 46,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 92, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 90, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 86, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 88, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 85, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 89,
+      "verdict": "Safe",
+      "infrastructureScore": 92,
+      "reviewSentiment": "Highly favorable from Symbiosis Law and Design students; pleasant neighborhood vibe with active streetlighting",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Situated in upscale Clover Park society with dual gate check",
+        "Walking distance to Symbiosis Viman Nagar and lively cafes"
+      ],
+      "missingInformation": [],
+      "summary": "Prime choice for Symbiosis Pune scholars. Excellent security standards inside a premium residential neighborhood.",
+      "recommendations": [
+        "Check meal timings if attending late evening theater or studio classes."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:35:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-sym-1",
+        "author": "Isha M.",
+        "role": "Symbiosis Law School",
+        "avatar": "I",
+        "date": "3 weeks ago",
+        "stayPeriod": "2025–Present",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 96 },
+        "ratings": { "security": 5, "location": 5, "management": 4, "cleanliness": 5, "overall": 5 },
+        "text": "Viman Nagar is already so student-friendly, and Sahyadri PG makes it even better. Walking to college takes under 10 minutes, and the society guards are very strict with outsiders.",
+        "helpfulCount": 33,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "iit-bombay-powai-residence",
+    "name": "Powai Greens Serviced Living",
+    "type": "Apartment",
+    "description": "Executive co-living apartments in Hiranandani Powai, 5 minutes from IIT Bombay Main Gate. 24/7 security concierge, gym, high-speed fiber, and safe lakeside environment.",
+    "address": "Central Avenue, Hiranandani Gardens, Powai",
+    "locality": "Powai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": "400076",
+    "monthlyRent": 21000,
+    "price": 21000,
+    "distanceKm": 0.9,
+    "commute": "10 min walk to IIT Bombay Main Gate",
+    "womenOnly": true,
+    "meals": false,
+    "tiffinNearby": true,
+    "curfewTime": "None (Keycard Controlled)",
+    "coordinates": { "lat": 19.1210, "lng": 72.9110 },
+    "nearbyColleges": [
+      { "id": "iit-bombay", "name": "IIT Bombay (Indian Institute of Technology)", "distanceKm": 0.9, "commute": "10 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Kanjurmarg Railway Station", "distanceKm": 2.2, "commute": "8 min auto" },
+      { "name": "Powai Lake Bus Depot", "distanceKm": 0.4, "commute": "5 min walk" }
+    ],
+    "facilities": [
+      "Gigabit Fiber Wi-Fi",
+      "Air Conditioned Suites",
+      "Modular Kitchenette",
+      "Housekeeping Service",
+      "Washing Machine & Dryer",
+      "Fitness Center & Swimming Pool"
+    ],
+    "securityFeatures": [
+      "24/7 Concierge & Uniformed Security",
+      "Smart Keycard Elevator & Apartment Access",
+      "Perimeter CCTV & Intercom Screening",
+      "Fire Sprinklers & Smoke Detectors"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98200-99112", "email": "powai.greens@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 94,
+    "verifiedReviews": 50,
+    "totalReviews": 53,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 97, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 95, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 92, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 93, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 91, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 94,
+      "verdict": "Safe",
+      "infrastructureScore": 97,
+      "reviewSentiment": "Outstanding reviews; Hiranandani township offers round-the-clock lighted walking boulevards and elite safety",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Inside Hiranandani Powai with 24/7 private township patrol vehicles",
+        "Keycard elevator control prevents unauthorized corridor access"
+      ],
+      "missingInformation": [
+        "Self-catering kitchen (tiffin subscriptions readily available)"
+      ],
+      "summary": "Top-tier accommodation for researchers, postgraduate interns at IIT Bombay, and working professionals.",
+      "recommendations": [
+        "Ideal for scholars with irregular lab hours who require 24/7 safe access."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:40:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-pow-1",
+        "author": "Dr. Prerna B.",
+        "role": "Postdoctoral Researcher, IIT Bombay",
+        "avatar": "P",
+        "date": "2 weeks ago",
+        "stayPeriod": "2025–Present",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 98 },
+        "ratings": { "security": 5, "location": 5, "management": 5, "cleanliness": 5, "overall": 5 },
+        "text": "Powai is arguably one of the safest localities in Mumbai. Returning home from the IIT lab past midnight is never a concern with the well-lit roads and building security.",
+        "helpfulCount": 41,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "jaipur-malviya-manor",
+    "name": "Pink City Girls Residency",
+    "type": "PG",
+    "description": "Safe women's residence in Malviya Nagar, Jaipur, near MNIT and World Trade Park. CCTV, home-style vegetarian Rajasthani and North Indian meals, study tables, and biometric gates.",
+    "address": "Sector 3, Malviya Nagar",
+    "locality": "Malviya Nagar",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "pincode": "302017",
+    "monthlyRent": 8500,
+    "price": 8500,
+    "distanceKm": 1.2,
+    "commute": "12 min walk / 4 min e-rickshaw to MNIT Jaipur",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "9:30 PM",
+    "coordinates": { "lat": 26.8520, "lng": 75.8150 },
+    "nearbyColleges": [
+      { "id": "bits-pilani", "name": "MNIT / University Campuses, Jaipur", "distanceKm": 1.2, "commute": "12 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Gaurav Tower Bus Stop", "distanceKm": 0.5, "commute": "6 min walk" },
+      { "name": "Gandhinagar Jaipur Railway Station", "distanceKm": 2.8, "commute": "8 min cab" }
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Air Cooled & AC Rooms",
+      "3 Pure Veg Meals Included",
+      "RO Water",
+      "Washing Machine",
+      "Power Backup"
+    ],
+    "securityFeatures": [
+      "24/7 CCTV at Main Entry and Staircases",
+      "Biometric Access System",
+      "Resident Female Warden",
+      "Night Guard at Gate",
+      "Fire Extinguishers"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-94140-66778", "email": "pinkcity.pg@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 85,
+    "verifiedReviews": 35,
+    "totalReviews": 39,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 88, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 86, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 82, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 85, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 82, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 85,
+      "verdict": "Safe",
+      "infrastructureScore": 88,
+      "reviewSentiment": "Warm and positive reviews praising familial care, hygiene, and peaceful residential setting",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Situated in prime Malviya Nagar residential sector near commercial amenities",
+        "Biometric lock and resident warden who lives in the building"
+      ],
+      "missingInformation": [],
+      "summary": "Dependable, safe PG in Jaipur with excellent access to student coaching hubs, colleges, and World Trade Park.",
+      "recommendations": [
+        "Great choice for students moving to Jaipur for college or entrance coaching."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:45:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-jp-1",
+        "author": "Pooja V.",
+        "role": "Architecture Student",
+        "avatar": "P",
+        "date": "1 month ago",
+        "stayPeriod": "2026",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 95 },
+        "ratings": { "security": 5, "location": 5, "management": 4, "cleanliness": 4, "overall": 5 },
+        "text": "Moving to Jaipur alone was smooth because the owners are very respectful and the gate has proper biometric security. Food is fresh and tastes like home.",
+        "helpfulCount": 26,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "hyderabad-gachibowli-haven",
+    "name": "Deccan Pearl Women's Living",
+    "type": "PG",
+    "description": "Tech-enabled executive co-living for women in Gachibowli near Hitec City and University of Hyderabad. High-speed Wi-Fi, AC, and 24/7 security.",
+    "address": "Telecom Nagar, Gachibowli",
+    "locality": "Gachibowli",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500032",
+    "monthlyRent": 13000,
+    "price": 13000,
+    "distanceKm": 1.4,
+    "commute": "12 min to DLF Cyber City / Univ of Hyderabad",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "11:00 PM",
+    "coordinates": { "lat": 17.4400, "lng": 78.3610 },
+    "nearbyColleges": [
+      { "id": "bits-pilani", "name": "University of Hyderabad / IIIT Hyderabad", "distanceKm": 1.8, "commute": "6 min auto" }
+    ],
+    "nearbyTransport": [
+      { "name": "Raidurg Metro Station", "distanceKm": 2.4, "commute": "7 min auto" },
+      { "name": "Gachibowli 'X' Roads Bus Stop", "distanceKm": 0.6, "commute": "7 min walk" }
+    ],
+    "facilities": [
+      "Gigabit Wi-Fi",
+      "Air Conditioning",
+      "3 South & North Indian Meals",
+      "100% Generator Backup",
+      "Laundromat",
+      "Gym & Terrace Lounge"
+    ],
+    "securityFeatures": [
+      "24/7 CCTV in Corridors and Entry Gate",
+      "RFID Smart Keycard Gate",
+      "Stationed Night Guards",
+      "Female Facility Manager",
+      "Smoke Detectors and Fire Hydrants"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-40-2345-6789", "email": "deccan.pearl@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 90,
+    "verifiedReviews": 44,
+    "totalReviews": 47,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 93, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 91, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 88, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 89, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 86, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 90,
+      "verdict": "Safe",
+      "infrastructureScore": 93,
+      "reviewSentiment": "Highly positive from software interns and graduate students in Cyberabad",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Situated in active IT corridor with late-night food stalls and constant police patrolling",
+        "RFID keycard entry and round-the-clock security guard"
+      ],
+      "missingInformation": [],
+      "summary": "Modern, safe, and tech-friendly accommodation in Hyderabad's premier employment and educational hub.",
+      "recommendations": [
+        "Ideal for corporate interns, tech professionals, and university scholars."
+      ],
+      "assessmentTimestamp": "2026-11-10T14:50:00.000Z",
+      "caveat": "Sample demonstration analysis."
+    },
+    "reviews": [
+      {
+        "id": "rev-hyd-1",
+        "author": "Meghana C.",
+        "role": "Tech Intern, Gachibowli",
+        "avatar": "M",
+        "date": "2 weeks ago",
+        "stayPeriod": "2026",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 97 },
+        "ratings": { "security": 5, "location": 5, "management": 4, "cleanliness": 5, "overall": 5 },
+        "text": "Moving from Vizag to Hyderabad was effortless here. The area is lively even at 10 PM, the food caters to both South and North palates, and security is uncompromising.",
+        "helpfulCount": 35,
+        "sisterChoice": "Yes"
+      }
+    ]
+  },
+  {
+    "id": "sunrise",
+    "name": "Sunrise Residency PG",
+    "type": "PG",
+    "description": "Safe, women-only PG in Paschim Vihar with CCTV surveillance, home-cooked food and biometric entry. Close to BVCOE and Paschim Vihar East Metro Station.",
+    "address": "A-2 Block, Paschim Vihar",
+    "locality": "Paschim Vihar",
+    "city": "New Delhi",
+    "state": "Delhi NCR",
+    "pincode": "110063",
+    "monthlyRent": 8500,
+    "price": 8500,
+    "distanceKm": 1.1,
+    "commute": "14 min walk to BVCOE",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "10:00 PM",
+    "coordinates": { "lat": 28.6772, "lng": 77.1176 },
+    "nearbyColleges": [
+      { "id": "bvcoe-delhi", "name": "BVCOE (Bharati Vidyapeeth's College of Engineering)", "distanceKm": 1.1, "commute": "14 min walk" }
+    ],
+    "nearbyTransport": [
+      { "name": "Paschim Vihar East Metro", "distanceKm": 0.8, "commute": "10 min walk" }
+    ],
+    "facilities": [
+      "Wi-Fi",
+      "Air Conditioning",
+      "3 Meals Included",
+      "Power Backup",
+      "Washing Machine",
+      "RO Drinking Water",
+      "Geyser"
+    ],
+    "securityFeatures": [
+      "24/7 CCTV in Corridors & Entry",
+      "Biometric Gate Access",
+      "Full-time Female Warden",
+      "Night Security Guard",
+      "Visitor Entry Logbook",
+      "Fire Extinguishers on 1st & Ground Floor"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98110-12345", "email": "sunrise.residency@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 63,
+    "verifiedReviews": 29,
+    "totalReviews": 38,
+    "flags": [
+      {
+        "id": "rf-1",
+        "level": "risk",
+        "title": "Unlit lane after 8 pm",
+        "text": "Lane from Paschim Vihar East metro is poorly lit after 8 pm.",
+        "details": "The walk from Paschim Vihar East metro has no working streetlights. Reported by 4 verified residents, most recently 3 weeks ago.",
+        "reply": "Two lights added at our gate and a streetlight request filed. Our guard meets residents at the metro after 8 pm — just call.",
+        "date": "Oct 2026",
+        "severity": "High"
+      },
+      {
+        "id": "rf-2",
+        "level": "warn",
+        "title": "Slow deposit refunds",
+        "text": "Two residents waited 3+ months for deposit refunds.",
+        "details": "Two residents waited 3+ months for ₹15,000 deposits. One refunded after a complaint; one still open.",
+        "reply": "Refund policy is now 30 days, in writing.",
+        "date": "Sep 2026",
+        "severity": "Medium"
+      }
+    ],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 78, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 48, "weight": 25, "label": "High risk" },
+      "managementBehaviour": { "score": 72, "weight": 20, "label": "Use caution" },
+      "reviewTrust": { "score": 70, "weight": 15, "label": "Use caution" },
+      "complaintHistory": { "score": 30, "weight": 10, "label": "High risk" }
+    },
+    "safetyAssessment": {
+      "overallScore": 63,
+      "verdict": "Use caution",
+      "infrastructureScore": 78,
+      "reviewSentiment": "Mixed with good internal security but external transit concerns after dark",
+      "potentialRiskIndicators": [
+        "Unlit access lane from metro station after 8:00 PM",
+        "Pending security deposit dispute on record"
+      ],
+      "positiveSafetyIndicators": [
+        "Functional 24/7 corridor & gate CCTV with dedicated female warden",
+        "Nighttime security guard with visitor registration"
+      ],
+      "missingInformation": [
+        "No certified fire safety NOC available for upper floors"
+      ],
+      "summary": "Inside, Sunrise is well run with CCTV and warden oversight. External lane from the metro requires caution after dark.",
+      "recommendations": [
+        "Reasonable pick if you will be home before dark; request guard escort or use e-rickshaw for late returns."
+      ],
+      "assessmentTimestamp": "2026-11-10T10:30:00.000Z",
+      "caveat": "Demonstration AI safety profile."
+    },
+    "reviews": [
+      {
+        "id": "rev-1",
+        "author": "Riya",
+        "role": "B.Tech student",
+        "avatar": "R",
+        "date": "3 weeks ago",
+        "stayPeriod": "Jan–Oct 2026",
+        "isVerified": true,
+        "aiCheck": { "status": "likely genuine", "score": 94 },
+        "ratings": { "security": 4, "location": 2, "management": 4, "cleanliness": 4, "overall": 3 },
+        "text": "Inside I always felt safe — the guard knows every girl by name and the CCTV actually works. The problem is the walk from the metro. After 8 it's pitch dark and a few men hang around the tea stall. I started taking an e-rickshaw for ₹20 to the gate.",
+        "helpfulCount": 24,
+        "sisterChoice": "Yes, with conditions"
+      }
+    ]
+  },
+  {
+    "id": "lotus-nest",
+    "name": "Lotus Nest Girls PG",
+    "type": "PG",
+    "description": "High-security premium women's accommodation located within a gated residential colony in Paschim Vihar. Features 24/7 warden, biometric turnstiles, and nutritious home-style meals.",
+    "address": "B-3 Pocket 2, Paschim Vihar",
+    "locality": "Paschim Vihar",
+    "city": "New Delhi",
+    "state": "Delhi NCR",
+    "pincode": "110063",
+    "monthlyRent": 11500,
+    "price": 11500,
+    "distanceKm": 0.8,
+    "commute": "10 min walk to BVCOE",
+    "womenOnly": true,
+    "meals": true,
+    "tiffinNearby": true,
+    "curfewTime": "10:30 PM",
+    "coordinates": { "lat": 28.6745, "lng": 77.1132 },
+    "nearbyColleges": [
+      { "id": "bvcoe-delhi", "name": "BVCOE (Bharati Vidyapeeth's College of Engineering)", "distanceKm": 0.8, "commute": "10 min walk" }
+    ],
+    "facilities": [
+      "High-speed Wi-Fi",
+      "Air Conditioned Rooms",
+      "3 Home-cooked Meals",
+      "100% Power Backup",
+      "Automatic Washing Machines"
+    ],
+    "securityFeatures": [
+      "Gated Colony with Guard Checkpoint",
+      "Biometric Turnstile Entry",
+      "32 Active HD CCTVs with 30-day backup",
+      "Resident Female Warden",
+      "Two Night Guards on Duty"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "contact": { "phone": "+91-98711-22334", "email": "lotusnest.pg@demo.shestay.app", "verifiedContact": true },
+    "verificationStatus": "Demonstration / Sample Data (Not physically audited)",
+    "isDemo": true,
+    "score": 86,
+    "verifiedReviews": 41,
+    "totalReviews": 45,
+    "flags": [],
+    "scoreBreakdown": {
+      "physicalSecurity": { "score": 92, "weight": 30, "label": "Safe" },
+      "locationSafety": { "score": 88, "weight": 25, "label": "Safe" },
+      "managementBehaviour": { "score": 85, "weight": 20, "label": "Safe" },
+      "reviewTrust": { "score": 84, "weight": 15, "label": "Safe" },
+      "complaintHistory": { "score": 80, "weight": 10, "label": "Safe" }
+    },
+    "safetyAssessment": {
+      "overallScore": 86,
+      "verdict": "Safe",
+      "infrastructureScore": 92,
+      "reviewSentiment": "Highly favorable; praises strict security and well-lit gated colony environment",
+      "potentialRiskIndicators": [],
+      "positiveSafetyIndicators": [
+        "Double-layer security: colony entrance checkpoint + property biometric gate",
+        "Warden is resident 24/7 on premises"
+      ],
+      "missingInformation": [],
+      "summary": "Lotus Nest excels across physical security and location safety. Situated inside a guarded colony.",
+      "recommendations": [
+        "Excellent option for university students prioritizing safety."
+      ],
+      "assessmentTimestamp": "2026-11-10T09:45:00.000Z",
+      "caveat": "Demonstration AI safety profile."
+    },
+    "reviews": []
+  }
+]

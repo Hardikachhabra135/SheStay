@@ -1,0 +1,29 @@
+{
+  "facilities": [
+    { "id": "wifi", "name": "High-Speed Wi-Fi", "category": "Connectivity" },
+    { "id": "ac", "name": "Air Conditioning", "category": "Comfort" },
+    { "id": "meals-3", "name": "3 Home-cooked Meals", "category": "Dining" },
+    { "id": "meals-2", "name": "2 Meals (Breakfast + Dinner)", "category": "Dining" },
+    { "id": "power-backup", "name": "100% Power Backup", "category": "Utility" },
+    { "id": "washing-machine", "name": "Automatic Washing Machines", "category": "Utility" },
+    { "id": "ro-water", "name": "RO Drinking Water", "category": "Health" },
+    { "id": "geyser", "name": "Water Geyser", "category": "Utility" },
+    { "id": "study-desk", "name": "Dedicated Study Desk", "category": "Study" },
+    { "id": "attached-washroom", "name": "Attached Washroom", "category": "Comfort" },
+    { "id": "daily-housekeeping", "name": "Daily Housekeeping", "category": "Hygiene" },
+    { "id": "refrigerator", "name": "Refrigerator", "category": "Utility" },
+    { "id": "gym", "name": "Gym & Fitness Area", "category": "Recreation" }
+  ],
+  "securityFeatures": [
+    { "id": "cctv-247", "name": "24/7 CCTV in Corridors & Entry", "impact": "High", "weight": 25 },
+    { "id": "biometric-access", "name": "Biometric / RFID Gate Access", "impact": "High", "weight": 20 },
+    { "id": "female-warden", "name": "Resident Female Warden", "impact": "High", "weight": 20 },
+    { "id": "night-guard", "name": "Night Security Guard", "impact": "High", "weight": 18 },
+    { "id": "visitor-logbook", "name": "Visitor Entry Logbook & Verification", "impact": "Medium", "weight": 10 },
+    { "id": "fire-safety", "name": "Fire Extinguishers on Every Floor", "impact": "Medium", "weight": 10 },
+    { "id": "sos-alarm", "name": "Emergency SOS Alarm / Push Buttons", "impact": "High", "weight": 15 },
+    { "id": "digital-door-lock", "name": "Digital Smart Door Locks", "impact": "Medium", "weight": 12 },
+    { "id": "gated-community", "name": "Gated Colony Security Checkpoint", "impact": "High", "weight": 15 }
+  ]
+}
+
